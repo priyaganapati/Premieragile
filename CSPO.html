@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navbar</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="CSPO.css">
+</head>
+
+<body>
+
+<!-- TOP NAVBAR -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <a class="navbar-brand d-lg-none">
+            <img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="mobile-logo">
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none d-lg-none ms-auto" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+            <i class="bi bi-list text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end">
+            <ul class="navbar-nav align-items-center">
+
+                <li class="nav-item">
+                    <a class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">Company</a></li>
+                        <li><a class="dropdown-item">Our Accredition</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Corporate</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">CSM Corporate</a></li>
+                        <li><a class="dropdown-item">CSPO corporate</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">Blogs</a></li>
+                        <li><a class="dropdown-item">Continuous Learning</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Premier Acceleration</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">About</a></li>
+                        <li><a class="dropdown-item">Resume Services</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Contact</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">Contact Us</a></li>
+                        <li><a class="dropdown-item">Refer & Earn</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link">Book AGILE51</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="offcanvas offcanvas-start d-lg-none" id="mobileMenu">
+    <div class="offcanvas-header">
+        <img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="mobile-logo">
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <div class="accordion" id="menuAccordion">
+
+            <button class="accordion-button collapsed">Home</button>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#aboutMenu">
+                        About
+                    </button>
+                </h2>
+                <div id="aboutMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a>Company </a>
+                        <a>Our Accredition</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#corpMenu">
+                        Corporate
+                    </button>
+                </h2>
+                <div id="corpMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a>CSM Corporate</a>
+                        <a>CSPO Corporates</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#resMenu">
+                        Resources
+                    </button>
+                </h2>
+                <div id="resMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a>Blogs</a>
+                        <a>Continuous Learning</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#premMenu">
+                        Premier Acceleration
+                    </button>
+                </h2>
+                <div id="premMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a>About</a>
+                        <a>Resume Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#contactMenu">
+                        Contact
+                    </button>
+                </h2>
+                <div id="contactMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a>Contact Us</a>
+                        <a>Refer & Earn</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="accordion-button collapsed">Book AGILE51</button>
+
+        </div>
+    </div>
+</div>
+
+<!-- SECOND NAV -->
+<section class="second-nav d-none d-lg-block">
+    <div class="container-fluid second-nav-inner">
+
+        <div class="logo-wrap">
+            <img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="logo-img">
+        </div>
+
+        <div class="center-wrap">
+
+            <div class="dropdown course-dropdown">
+                <button class="btn course-btn dropdown-toggle" data-bs-toggle="dropdown">
+                    All Courses
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item">Agile Scrum Master</a></li>
+                    <li><a class="dropdown-item">AI Agile</a></li>
+                    <li><a class="dropdown-item">Leadership</a></li>
+                </ul>
+            </div>
+
+            <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" class="form-control" placeholder="Search Courses">
+            </div>
+
+        </div>
+
+        <div class="right-wrap">
+            <button class="btn quick-btn">Quick Book</button>
+            <button class="btn login-btn">Log in</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- SCROLL TEXT -->
+<section class="third-section text-center text-white">
+    <div class="move">
+        <p id="scrollText">
+            Welcome to PremierAgile! Get Plugged In | Grow with One of the Largest Agile & Scrum Communities | FEATURED IN FORBES MAGAZINE 2025 | Proud to Announce AGILE51 SUCCESS FACTORS | World-class guidance to transform yourself and your organization
+        </p>
+    </div>
+</section>
+<!-- ===== HERO ===== -->
+<section class="section_corporate_training">
+
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- LEFT -->
+            <div class="col-lg-6 content_corporate-main">
+
+                <h1>
+                    Certified Scrum Product Owner Training for Corporate Teams - Choice of Fortune 500 Companies
+                </h1>
+
+                <div class="description_content">
+                    <p>For the past 27 years, we have been the emerging choice for Product Owner training for corporate teams.</p>
+
+                    <p>Whether you are a startup scaling rapidly, a mid-size organization launching new digital products, or a large enterprise managing multiple portfolios, strong Product Ownership is no longer optional.</p>
+
+                    <p>What makes us different from other training providers is our deep enterprise transformation experience, real product management exposure, customized corporate programs, brain science-based learning, and industry-aligned content.</p>
+
+                    <p>Our trainers help your Product Owners move beyond backlog writing and drive measurable outcomes.</p>
+                </div>
+
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="col-lg-6 right-wrapper">
+
+                <div class="corporate_bnr_card">
+                    <img src="https://ik.imagekit.io/PremierAgile/public/images/calendar-with-appointment-meeting-reminder-1x.png">
+                    
+                    <div>
+                        <h3>Book a free evaluation call with our expert CST</h3>
+                        <p>to get the right training structure for your team.</p>
+                        <a href="#">Schedule now</a>
+                    </div>
+                </div>
+
+                <img src="https://ik.imagekit.io/PremierAgile/public/uploads/assetupload/CSPO%20Corp%20banner.png"
+                     class="img-fluid hero-img">
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- ===== COUNTER ===== -->
+<section class="section_home-counter">
+
+    <div class="container homepage_counter text-center">
+
+        <div class="bnr-counter-bx">
+            <h2><span class="timer" data-count="20000">0</span>+</h2>
+            <p>Trained</p>
+        </div>
+
+        <div class="bnr-counter-bx">
+            <h2><span class="timer" data-count="35">0</span>+</h2>
+            <p>Countries</p>
+        </div>
+
+        <div class="bnr-counter-bx">
+            <h2><span class="timer" data-count="1000">0</span>+</h2>
+            <p>Workshops</p>
+        </div>
+
+        <div class="bnr-counter-bx">
+            <h2><span class="timer" data-count="100">0</span>%</h2>
+            <p>Success Rate</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FIRST SECTION ================= -->
+<section class="trainer-section">
+<div class="container">
+<div class="row">
+
+<div class="col-md-12">
+
+<p><b>Features are being delivered but value feels unclear.</b><br>
+• Stakeholders keep changing priorities.<br>
+• Backlogs are growing but clarity is shrinking.<br>
+• Releases happen, but customer adoption is low.<br>
+• If this sounds familiar, the issue is not execution. It is Product Ownership maturity.<br>
+• Traditional requirement-driven models create confusion, slow decisions, and diluted accountability.<br>
+• To win in today’s competitive market, you need empowered Product Owners who can make decisions, prioritize effectively, and connect business strategy to delivery.<br>
+• Our hands-on 2-day fully customized Corporate Certified Scrum Product Owner (CSPO) training gives your teams clarity, ownership, and outcome-driven thinking.
+</p>
+
+<p><b>You gain:</b><br>
+• Clear product vision alignment<br>
+• Strong backlog prioritization frameworks<br>
+• Stakeholder alignment mechanisms<br>
+• Faster decision-making<br>
+• Value-focused Sprint outcomes<br>
+Teams reduce waste, improve ROI visibility, and deliver meaningful increments consistently.
+</p>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ================= SECOND SECTION ================= -->
+<section class="trainer-section">
+<div class="container">
+<div class="row align-items-center">
+
+<!-- LEFT CONTENT -->
+<div class="col-md-8 order-2 order-md-1">
+
+<h1 class="trainer-name mb-3">Suresh Konduru</h1>
+
+<p>
+Suresh Konduru has more than 27 years of experience in IT and non-IT industries extensively in Agile Transformation,
+Agile Consulting, Agile Coaching & Scrum Training, Delivery Management, Program Management, Project Management,
+for Global Fortune 500 customers.
+</p>
+
+<p>
+He is featured in Forbes India Magazine 2025 for his contributions to AI–Agile global transformation.
+Partnering with worldwide customers for enterprise transformation, coaching, and leadership development.
+</p>
+
+<p>
+He is one of the top Certified Scrum Trainers globally and specialises in 
+"Training Scrum from the Back of the Room" based on Brain Science learning.
+</p>
+
+<!-- BUTTONS -->
+<div class="d-flex align-items-center mt-4">
+
+<!-- WATCH VIDEO -->
+<a href="#" class="watch-btn" data-bs-toggle="modal" data-bs-target="#videoModal">
+<i class="fa fa-play me-2"></i> Watch Video
+</a>
+
+<!-- LINKEDIN -->
+<a href="https://www.linkedin.com/in/suresh-konduru/" target="_blank" class="linkedin-btn">
+<i class="fab fa-linkedin-in"></i>
+</a>
+
+</div>
+
+</div>
+
+<!-- IMAGE -->
+<div class="col-md-4 text-center order-1 order-md-2 mb-4 mb-md-0">
+<img src="https://ik.imagekit.io/PremierAgile/public/uploads/trainers/trainer_1707469211.jpg"
+class="trainer-img img-fluid">
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ================= VIDEO MODAL ================= -->
+<div class="modal fade" id="videoModal" tabindex="-1">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+
+<div class="modal-body p-0">
+<iframe id="videoFrame" width="100%" height="400"
+src=""
+frameborder="0"
+allow="autoplay; encrypted-media"
+allowfullscreen>
+</iframe>
+</div>
+
+</div>
+</div>
+</div>
+
+<section class="section_corporate_clients">
+<div class="container">
+
+<h2>Our Clients</h2>
+
+<div class="slider-wrapper">
+
+<div class="slider-track">
+
+    <!-- ORIGINAL -->
+    <div class="slide"><img src="https://ik.imagekit.io/PremierAgile/public/asset/image/clt1.png"></div>
+    <div class="slide"><img src="https://ik.imagekit.io/PremierAgile/public/asset/image/clt2.png"></div>
+    <div class="slide"><img src="https://ik.imagekit.io/PremierAgile/public/asset/image/clt3.png"></div>
+    <div class="slide"><img src="https://ik.imagekit.io/PremierAgile/public/asset/image/clt4.png"></div>
+    <div class="slide"><img src="https://ik.imagekit.io/PremierAgile/public/asset/image/clt5.png"></div>
+    <div class="slide"><img src="https://ik.imagekit.io/PremierAgile/public/asset/image/clt6.png"></div>
+
+    <!-- DUPLICATE (IMPORTANT for loop) -->
+    <div class="slide"><img src="https://ik.imagekit.io/PremierAgile/public/asset/image/clt1.png"></div>
+    <div class="slide"><img src="https://ik.imagekit.io/PremierAgile/public/asset/image/clt2.png"></div>
+    <div class="slide"><img src="https://ik.imagekit.io/PremierAgile/public/asset/image/clt3.png"></div>
+    <div class="slide"><img src="https://ik.imagekit.io/PremierAgile/public/asset/image/clt4.png"></div>
+    <div class="slide"><img src="https://ik.imagekit.io/PremierAgile/public/asset/image/clt5.png"></div>
+    <div class="slide"><img src="https://ik.imagekit.io/PremierAgile/public/asset/image/clt6.png"></div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ================= TOP ================= -->
+<section class="section-top">
+    <div class="container">
+        <h2>
+            Training Formats We Offer For <br>
+            <small class="text-muted">Corporate Agile & Scrum Certification Training</small>
+        </h2>
+
+        <div class="format-box">
+            <div class="format-item">Live Online Training (Weekday or Weekend)</div>
+            <div class="format-item">In-Person Corporate Workshops</div>
+            <div class="format-item">Fully Customizable Content</div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= STEPS ================= -->
+<section class="steps-section">
+    <div class="steps-overlay"></div>
+
+    <div class="container steps-content">
+
+        <h2 class="steps-title">Steps</h2>
+
+        <div class="steps-card">
+
+            <div class="steps-row">
+
+                <div class="step-item">
+                    <div class="step-number">01</div>
+                    <p>
+                        Based on your organization's long-term and short-term goals,
+                        choose which course is suitable for your team.
+                    </p>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">02</div>
+                    <p>
+                        If you need assistance to choose, please contact us.
+                        We will help you to make a decision whether you need a tactical
+                        course, or a strategic long-term transformation.
+                    </p>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">03</div>
+                    <p>
+                        We will curate a transformation plan based on your organization's needs.
+                    </p>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">04</div>
+                    <p>
+                        We will implement the plan assisted by world-class expertise,
+                        or hand-hold you with the initial baby steps so that your team
+                        can become self-sufficient.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="section-benefits">
+<div class="container">
+
+<h2>
+Why we are the emerging choice for<br>
+Scrum Master training for corporate teams!
+</h2>
+
+<div class="row g-4 justify-content-center">
+
+<!-- 1 -->
+<div class="col-12 col-sm-6 col-lg">
+<div class="refer-benefits">
+<img src="https://ik.imagekit.io/PremierAgile/public/asset/image/experienced-trainers.png">
+<h3>Experienced Trainers</h3>
+<div class="card-text-scroll">
+Our corporate training programs are designed and delivered by experienced
+trainers who have a deep understanding of the industry and the latest
+trends and best practices.
+</div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="col-12 col-sm-6 col-lg">
+<div class="refer-benefits">
+<img src="https://ik.imagekit.io/PremierAgile/public/asset/image/customized-programs.png">
+<h3>Customized Programs</h3>
+<div class="card-text-scroll">
+We understand that every organization is unique, which is why we work closely
+with our clients to develop customized training programs that meet their
+specific needs and goals.
+</div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="col-12 col-sm-6 col-lg">
+<div class="refer-benefits">
+<img src="https://ik.imagekit.io/PremierAgile/public/asset/image/interactive-learning.png">
+<h3>Interactive Learning</h3>
+<div class="card-text-scroll">
+Our training programs are designed to be interactive and engaging,
+incorporating a variety of teaching methods and techniques to ensure that
+participants remain focused and retain the knowledge they've gained.
+</div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="col-12 col-sm-6 col-lg">
+<div class="refer-benefits">
+<img src="https://premieragile.com/public/asset/image/practical-applications.png">
+<h3>Practical Applications</h3>
+<div class="card-text-scroll">
+We focus on providing practical, real-world applications for the skills and
+knowledge that we teach, ensuring that participants are able to apply what
+they've learned immediately on the job.
+</div>
+</div>
+</div>
+
+<!-- 5 (HIDE IN TABLET) -->
+<div class="col-12 col-sm-6 col-lg hide-tab">
+<div class="refer-benefits">
+<img src="https://premieragile.com/public/asset/image/measurable-results.png">
+<h3>Measurable Results</h3>
+<div class="card-text-scroll">
+We believe that training is only effective if it produces measurable results.
+That's why we work closely with our clients to develop metrics and track
+progress so they can see the impact.
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section_landing-syllabus benefits new-courses my-4 my-sm-5">
+    <div class="container">
+
+        <div class="new-courses-gradient px-3 py-3 p-sm-4">
+
+            <div class="row">
+
+                <div class="col-xl-8 pb-3 pb-sm-4">
+                    <h3 class="text-white fs-3">
+                        Benefits for Your Organization
+                    </h3>
+                </div>
+
+                <div class="col-12">
+                    <div class="slider-syllabus px-3 px-sm-4 py-3">
+
+                        <div class="description_content description-ul">
+
+                            <ul class="mb-0">
+
+                                <li>Teams can finish work faster and deliver on time</li>
+
+                                <li>Everyone works together better with clear goals</li>
+
+                                <li>Employees feel more motivated and want to stay longer</li>
+
+                                <li>New ideas come out more often because of better teamwork</li>
+
+                                <li>The training helps teams focus on what really matters</li>
+
+                                <li>Agile makes it easier to handle changes quickly</li>
+
+                                <li>The whole company gets better at solving problems</li>
+
+                                <li>You can proudly say your team is certified and future-ready</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="section_home-testimonial py-4 py-sm-5">
+    <div class="container">
+
+        <div class="new-courses-bg px-3 px-sm-5 py-4 py-sm-5">
+
+            <div class="row align-items-start">
+
+                <!-- LEFT -->
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <h3 class="testimonial-title">Testimonials</h3>
+                    <p class="testimonial-desc">
+                        We are always pleased to hear positive feedback about our courses.
+                        Here are some of the testimonials we've received from individuals and companies.
+                    </p>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="col-lg-9">
+                    <div class="row g-4">
+
+                        <!-- CARD 1 -->
+                        <div class="col-md-6">
+                            <div class="testimonial-card gradient-1">
+
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://ik.imagekit.io/PremierAgile/public/uploads/testimonial/user_1625814882.jpg" class="t-img">
+
+                                    <div class="ms-3">
+                                        <h6 class="mb-0 fw-bold text-white">Srinivas Kannuri</h6>
+                                        <small class="text-white">Project Manager, India</small>
+
+                                        <div class="stars mt-1">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="t-content">
+                                    When I was looking for a good CSM trainer as well as an organization who can help me improve further in my Scrum Master journey, I found PremierAgile thankfully. Not only the CSM workshop conducted by Suresh Konduru is a world-class training experience, the continuous learning programs offered by PremierAgile helped me a great deal.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="col-md-6">
+                            <div class="testimonial-card gradient-2">
+
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://ik.imagekit.io/PremierAgile/public/uploads/testimonial/user_1625814944.jpg" class="t-img">
+
+                                    <div class="ms-3">
+                                        <h6 class="mb-0 fw-bold text-white">John Donalds</h6>
+                                        <small class="text-white">Scrum Master, USA</small>
+
+                                        <div class="stars mt-1">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="t-content">
+                                    My learning didn't stop with CSM. Good initiative by PremierAgile to help continue on my learning journey. PremierWednesday is very helpful.
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<div class="content_faqs py-4 px-lg-5 col-lg-10 mx-auto">
+    <div class="faqs_queries row p-3 align-items-center mx-0">
+        <div class="col-md-7 text-white">
+            Book a free quick evaluation call with our trainer to assess your needs. We’ll recommend the right structure and customize the training for maximum impact.
+        </div>
+        <div class="col-md-5 text-md-end mt-3 mt-md-0">
+            <a href="#" class="bg-white px-3 py-2 rounded text-dark text-decoration-none">Book a Free Consultation</a>
+        </div>
+    </div>
+</div>
+
+<!-- FAQ -->
+<section class="section_category-faq py-5">
+<div class="container">
+
+<div class="section_faqs p-4 p-md-5">
+
+<h2 class="text-center fw-bold mb-4">Frequently Asked Questions</h2>
+
+<div class="accordion" id="faqAccordion">
+
+<!-- 1 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq1">
+1. What is CSPO corporate training for teams?
+</button>
+<div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+CSPO corporate training for teams is a private Certified Scrum Product Owner program delivered within your organization. Teams learn Product Vision, backlog management, stakeholder collaboration, and value prioritization using real business scenarios.
+</div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+2. How is Certified Scrum Product Owner training for organizations different from public workshops?
+</button>
+<div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+Certified Scrum Product Owner training for organizations aligns directly with your strategic goals. Case studies reflect your product domain. Discussions address live stakeholder challenges.
+</div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+3. Do you offer CSPO onsite training for companies?
+</button>
+<div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+Yes. CSPO onsite training for companies can be delivered at your office or preferred location.
+</div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
+4. Who should attend Enterprise Product Owner training for employees?
+</button>
+<div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+Ideal for Product Owners, Product Managers, Business Analysts, Portfolio Managers, and leadership stakeholders.
+</div>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">
+5. How long does CSPO corporate training for teams take?
+</button>
+<div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+The standard program runs for two full days with simulations and workshops.
+</div>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq6">
+6. What outcomes should you expect from training?
+</button>
+<div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+You gain clarity on Product Vision, improved stakeholder communication, and faster product decisions.
+</div>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq7">
+7. How does Enterprise Product Owner training support transformation?
+</button>
+<div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+It connects strategy to execution and improves measurable product outcomes.
+</div>
+</div>
+</div>
+
+<!-- 8 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq8">
+8. Do you support teams after training?
+</button>
+<div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+Yes. Includes backlog reviews, roadmap validation, and coaching support.
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+<div class="container py-5">
+
+<h2 class="mb-4">Corporate Enquiry</h2>
+
+<form id="form">
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<input type="text" id="fname" class="form-control" placeholder="First Name *">
+<div class="error">Enter valid name</div>
+</div>
+
+<div class="col-md-6 mb-3">
+<input type="text" id="lname" class="form-control" placeholder="Last Name *">
+<div class="error">Enter valid name</div>
+</div>
+
+<div class="col-md-6 mb-3">
+<input type="text" id="mobile" class="form-control" placeholder="Mobile Number *">
+<div class="error">Enter 10 digit number</div>
+</div>
+
+<div class="col-md-6 mb-3">
+<input type="text" id="email" class="form-control" placeholder="Email *">
+<div class="error">Invalid email</div>
+</div>
+
+<div class="col-md-6 mb-3">
+<input type="text" id="company" class="form-control" placeholder="Company Name *">
+<div class="error">Enter valid company (min 2 words)</div>
+</div>
+
+<div class="col-md-6 mb-3">
+<input type="number" id="participants" class="form-control" placeholder="Participants *" min="1">
+<div class="error">Minimum 1 participant required</div>
+</div>
+
+<div class="col-12 mb-3">
+<textarea id="message" class="form-control" rows="3" placeholder="Message *"></textarea>
+<div class="error">Enter meaningful message (min 10 chars)</div>
+</div>
+
+</div>
+
+<div class="text-center">
+<button class="btn-submit">Submit</button>
+</div>
+
+</form>
+
+</div>
+
+<!-- POPUP -->
+<div class="overlay" id="overlay"></div>
+
+<div class="popup" id="successPopup">
+<h4>Success </h4>
+<p>Form submitted successfully</p>
+<button class="btn btn-success" onclick="closePopup()">OK</button>
+</div>
+
+<div class="popup" id="errorPopup">
+<h4>Error </h4>
+<p>Please correct the errors</p>
+<button class="btn btn-danger" onclick="closePopup()">OK</button>
+</div>
+<footer class="footer-main mt-5">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-2 col-md-4 col-12">
+                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/logo.png" alt="Footer Image" style="filter: brightness(0) invert(1);" class="img-fluid">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <ul class="footer-links">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Premier Wednesday</li>
+                    <li>Corporate</li>
+                    <li>Resources</li>
+                    <li>Blog</li>
+                    <li>Quizzes</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <ul class="footer-links">
+                    <li>Founder-CEO</li>
+                    <li>Contact Us</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Refund & Cancellation</li>
+                    <li>Rescheduling Policy</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-6">
+                <ul class="footer-social">
+                    <li><i class="fab fa-linkedin"></i> Linkedin</li>
+                    <li><i class="fab fa-facebook"></i> Facebook</li>
+                    <li><i class="fab fa-youtube"></i> Youtube</li>
+                    <li><i class="fab fa-twitter"></i> Twitter</li>
+                    <li><i class="fab fa-instagram"></i> Instagram</li>
+                    <li><i class="fab fa-whatsapp"></i> Whatsapp</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="footer-address">
+                    <p><strong>India Office 1:</strong><br>
+                        Flat no 301, 3rd floor, B Block, Anjanadri Residency, Miyapur, Hyderabad</p>
+
+                    <p><strong>India Office 2:</strong><br>
+                        Marathahalli, Bengaluru-560037</p>
+
+                    <p><strong>USA Office:</strong><br>
+                        Austin, TX-78717</p>
+
+                    <p>Email: info@premieragile.com</p>
+                    <p>Call: 918977024453<br>917702124453<br>919154224453</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <p>© PremierAgile Consulting Private Limited. All Rights Reserved.</p>
+
+            <div>
+                <span class="me-2">As Featured In</span>
+                <img src="https://premieragile.com/public/uploads/assetupload/assetupload01756716198.png" class="img-fluid bottom-logo" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const text = document.getElementById("scrollText");
+const container = document.querySelector(".move");
+
+let pos = window.innerWidth;
+let speed = 1;
+let isPaused = false;
+
+function loop() {
+    if (!isPaused) {
+        pos -= speed;
+
+        if (pos < -text.offsetWidth) {
+            pos = container.offsetWidth;
+        }
+
+        text.style.transform = `translateX(${pos}px)`;
+    }
+
+    requestAnimationFrame(loop);
+}
+
+container.addEventListener("mouseenter", () => isPaused = true);
+container.addEventListener("mouseleave", () => isPaused = false);
+
+window.addEventListener("load", loop);
+window.addEventListener("resize", () => {
+    pos = container.offsetWidth;
+});
+
+const form = document.getElementById("form");
+
+/* BLOCK INVALID KEYS */
+document.getElementById("participants").addEventListener("keydown", function(e){
+    if (["-","+","e"].includes(e.key)) {
+        e.preventDefault();
+    }
+});
+
+/* REGEX */
+const nameRegex = /^[A-Za-z]{2,}( [A-Za-z]{2,})*$/;
+const mobileRegex = /^[0-9]{10}$/;
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+/* COMPANY VALIDATION */
+function validateCompany(value){
+    let words = value.trim().split(" ");
+    if(words.length < 2) return false;
+    return words.every(w => /^[A-Za-z]{2,}$/.test(w));
+}
+
+/* MESSAGE VALIDATION */
+function validateMessage(value){
+    let v = value.trim();
+
+    if(v.length < 10) return false;
+
+    let words = v.split(" ");
+    if(words.length < 3) return false;
+
+    if(/(.)\1{4,}/.test(v)) return false;
+
+    return true;
+}
+
+/* GENERAL VALIDATION */
+function validate(input, regex){
+let error = input.nextElementSibling;
+
+if(!regex.test(input.value.trim())){
+error.style.display="block";
+input.classList.add("shake");
+setTimeout(()=>input.classList.remove("shake"),300);
+return false;
+}else{
+error.style.display="none";
+return true;
+}
+}
+
+form.addEventListener("submit", function(e){
+e.preventDefault();
+
+let valid = true;
+
+/* BASIC */
+if(!validate(fname,nameRegex)) valid=false;
+if(!validate(lname,nameRegex)) valid=false;
+if(!validate(mobile,mobileRegex)) valid=false;
+if(!validate(email,emailRegex)) valid=false;
+
+/* COMPANY */
+if(!validateCompany(company.value)){
+company.nextElementSibling.style.display="block";
+company.classList.add("shake");
+valid=false;
+setTimeout(()=>company.classList.remove("shake"),300);
+}else{
+company.nextElementSibling.style.display="none";
+}
+
+/* MESSAGE */
+if(!validateMessage(message.value)){
+message.nextElementSibling.style.display="block";
+message.classList.add("shake");
+valid=false;
+setTimeout(()=>message.classList.remove("shake"),300);
+}else{
+message.nextElementSibling.style.display="none";
+}
+
+/* PARTICIPANTS */
+if(participants.value === "" || participants.value < 1){
+participants.nextElementSibling.style.display="block";
+participants.classList.add("shake");
+valid=false;
+setTimeout(()=>participants.classList.remove("shake"),300);
+}else{
+participants.nextElementSibling.style.display="none";
+}
+
+/* RESULT */
+if(valid){
+openPopup("successPopup");
+form.reset();
+}else{
+openPopup("errorPopup");
+}
+
+});
+
+/* POPUP */
+function openPopup(id){
+document.getElementById("overlay").classList.add("active");
+document.getElementById(id).classList.add("active");
+}
+
+function closePopup(){
+document.getElementById("overlay").classList.remove("active");
+document.querySelectorAll(".popup").forEach(p=>p.classList.remove("active"));
+}
+
+// Counter animation (smooth)
+const counters = document.querySelectorAll('.timer');
+
+counters.forEach(counter => {
+    const update = () => {
+        const target = +counter.getAttribute('data-count');
+        const current = +counter.innerText;
+        const increment = target / 120;
+
+        if(current < target){
+            counter.innerText = Math.ceil(current + increment);
+            requestAnimationFrame(update);
+        } else {
+            counter.innerText = target;
+        }
+    };
+    update();
+});
+const videoModal = document.getElementById('videoModal');
+const videoFrame = document.getElementById('videoFrame');
+
+videoModal.addEventListener('show.bs.modal', function () {
+    videoFrame.src = "https://www.youtube.com/embed/RZ3G9EY1gnQ?autoplay=1";
+});
+
+videoModal.addEventListener('hidden.bs.modal', function () {
+    videoFrame.src = "";
+});
+</script>
+
+</body>
+</html>
