@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navbar</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="resume.css">
+</head>
+
+<body>
+
+<!-- TOP NAVBAR -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <a class="navbar-brand d-lg-none">
+            <img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="mobile-logo">
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none d-lg-none ms-auto" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+            <i class="bi bi-list text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end">
+            <ul class="navbar-nav align-items-center">
+
+                <li class="nav-item">
+                    <a class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">Company</a></li>
+                        <li><a class="dropdown-item">Our Accreditation Bodies</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Corporate</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">CSM corporate</a></li>
+                        <li><a class="dropdown-item">CSPO corporate</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">Blogs</a></li>
+                        <li><a class="dropdown-item">Continuous Learning</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Premier Acceleration</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">about resume Services</a></li>
+                        <li><a class="dropdown-item">Mentorship</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Contact</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">Contact Us</a></li>
+                        <li><a class="dropdown-item">Refer & Earn</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link">Book AGILE51</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="offcanvas offcanvas-start d-lg-none" id="mobileMenu">
+    <div class="offcanvas-header">
+        <img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="mobile-logo">
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <div class="accordion" id="menuAccordion">
+
+            <button class="accordion-button collapsed">Home</button>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#aboutMenu">
+                        About
+                    </button>
+                </h2>
+                <div id="aboutMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a>Company</a>
+                        <a>Our Accreditation Bodies</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#corpMenu">
+                        Corporate
+                    </button>
+                </h2>
+                <div id="corpMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a>CSM corporate</a>
+                        <a>CSPO corporate</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#resMenu">
+                        Resources
+                    </button>
+                </h2>
+                <div id="resMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a>Blogs</a>
+                        <a>Continuous Learning</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#premMenu">
+                        Premier Acceleration
+                    </button>
+                </h2>
+                <div id="premMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a>about </a>
+                        <a>resume Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#contactMenu">
+                        Contact
+                    </button>
+                </h2>
+                <div id="contactMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a>Contact Us</a>
+                        <a>Refer & Earn</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="accordion-button collapsed">Book AGILE51</button>
+
+        </div>
+    </div>
+</div>
+
+<!-- SECOND NAV -->
+<section class="second-nav d-none d-lg-block">
+    <div class="container-fluid second-nav-inner">
+
+        <div class="logo-wrap">
+            <img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="logo-img">
+        </div>
+
+        <div class="center-wrap">
+
+
+
+            <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" class="form-control" placeholder="Search Courses">
+            </div>
+
+        </div>
+
+        <div class="right-wrap">
+            <button class="btn quick-btn">Quick Book</button>
+            <button class="btn login-btn">Log in</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- SCROLL TEXT -->
+<section class="third-section text-center text-white">
+    <div class="move">
+        <p id="scrollText">
+            Welcome to PremierAgile! Get Plugged In | Grow with One of the Largest Agile & Scrum Communities | FEATURED IN FORBES MAGAZINE 2025 | Proud to Announce AGILE51 SUCCESS FACTORS | World-class guidance to transform yourself and your organization
+        </p>
+    </div>
+</section>
+
+<section class="resume-section">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-6 resume-content">
+                <h1>Resume Services</h1>
+                <h4>
+                    We help you design resumes to attract job offers through our resume writing services. The resumes are crafted by our resume specialists who helped hundreds of global professionals. 
+                    We also assist with resume forwarding to companies and placement agencies that hire relevant profiles 
+                    with a decade or more experience.
+                </h4>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="col-lg-6 resume-img">
+                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/resume-banner.png" alt="Resume Service">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section class="resume-points">
+
+<div class="container">
+    <div class="row align-items-center">
+
+        <!-- LEFT TEXT -->
+        <div class="col-lg-7">
+
+            <ul class="resume-list">
+
+                <li>
+                    <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/attend-bookmark.png">
+                    <span>Your resume is the opportunity to make an excellent first impression during the job application process.</span>
+                </li>
+
+                <li>
+                    <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/attend-bookmark.png">
+                    <span>A well-written resume can highlight both your previous experiences and your soft skills, such as effective communication, writing, and organisational abilities.</span>
+                </li>
+
+                <li>
+                    <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/attend-bookmark.png">
+                    <span>We assist with resume forwarding to companies and placement agencies that hire profiles with a decade or more experience.</span>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="col-lg-5 resume-img">
+            <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/resume-writing-list.png" alt="Resume">
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+<section class="secion_refer-benefits new-courses-gradient py-4 py-sm-5">
+    <div class="container py-xl-3">
+
+        <h2 class="text-white text-center mb-4 mb-xl-5 fw-bold">
+            Key Highlights
+        </h2>
+
+        <div class="row justify-content-center px-xl-5">
+
+            <!-- CARD 1 -->
+            <div class="col-sm-6 col-lg-4 pb-4">
+                <div class="refer-benefits h-100 p-4 text-center">
+                    <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/resume-writing.png" class="img-fluid">
+                    <h3 class="mt-4 mb-3 new-courses-cl">Resume Writing</h3>
+                    <p>Our experts will create a highly professional resume for you.</p>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-sm-6 col-lg-4 pb-4">
+                <div class="refer-benefits h-100 p-4 text-center">
+                    <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/resume-highlighting.png" class="img-fluid">
+                    <h3 class="mt-4 mb-3 new-courses-cl">Resume Highlighting</h3>
+                    <p>Highlighting your career and skills to employers.</p>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-sm-6 col-lg-4 pb-4">
+                <div class="refer-benefits h-100 p-4 text-center">
+                    <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/resume-forwarding.png" class="img-fluid">
+                    <h3 class="mt-4 mb-3 new-courses-cl">Resume Forwarding</h3>
+                    <p>Resume Forwarding Service tailored for experienced professionals with over 10 years of work experience.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="section_category-faq new-courses-bg py-5">
+
+<div class="container">
+
+<h2 class="text-center faq-title mb-4">Frequently Asked Questions</h2>
+
+<div class="faq-container">
+
+<div class="accordion custom-accordion" id="faqAccordion">
+
+<!-- 1 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq1">
+How does the resume-writing process work?
+</button>
+<div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+We begin the resume writing process by getting to know you and learning about your background, skills and career goals. We will pair you with a professional writer who is knowledgeable about your industry once we have learned more about you.
+</div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+What is the time duration for the Resume writing process?
+</button>
+<div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+Your writer works with you on a first draft, which you will receive in about a week. Then you'll have another week to give your writer feedback, with up to two rounds of revisions. In general, the resume writing process takes 2–3 weeks.
+</div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+After finishing my resume, can I start applying for jobs right away?
+</button>
+<div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+Yes, right after you finish with your resume, you can start applying on job search platforms and start looking for jobs.
+</div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
+Who will write my Resume?
+</button>
+<div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+The resumes are crafted by our resume specialists who helped hundreds of global professionals from a wide range of industries.
+</div>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">
+How Resumes Can Help You Gain Additional Opportunities?
+</button>
+<div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+In this digital age, resumes are the top priority for getting those dream calls and selections. A strong resume can lead to more opportunities.
+</div>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq6">
+What is Resume Forwarding?
+</button>
+<div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+It is a PremierAgile service in which a jobseeker resume who has experience over ten years is forwarded to the industry top placement consultants, who match posted jobs with your resume details.
+</div>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq7">
+How does Resume Forwarding service work?
+</button>
+<div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+We send a job seeker's resume to placement consultants, who match the posted job requirements with the seeker's resume data. This increases the likelihood of receiving calls for relevant jobs in a short period of time.
+</div>
+</div>
+</div>
+
+<!-- 8 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq8">
+How many Organizations are we going to tie-up with?
+</button>
+<div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+We are partnering with nearly 300 placement consultants for this program.
+</div>
+</div>
+</div>
+
+<!-- 9 -->
+<div class="accordion-item">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq9">
+Is there any Job Guarantee if we avail this service?
+</button>
+<div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+For all the Agile courses we assist you the best way possible to make your resume highlighted to the employer. We don’t offer any Job Guarantee program as of now.
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</section>
+
+<section class="section_contact py-5">
+<div class="container">
+<div class="row">
+
+<!-- LEFT (UPDATED ONLY THIS) -->
+<div class="col-lg-5 col-md-6">
+
+<h1 class="h-contact">Say Hello!</h1>
+
+<div class="section_contact-p mt-3">
+<p>
+Got a question or feedback? We will be delighted to hear from you.
+You may contact us or fill up the form here.
+</p>
+</div>
+
+<div class="contact_details mt-4">
+<ul>
+<li>
+    <div class="contact_icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png">
+    </div>
+    <h2>918977024453, 917702124453, 919154224453</h2>
+</li>
+
+<li>
+    <div class="contact_icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png">
+    </div>
+    <h2>info@premieragile.com</h2>
+</li>
+
+<li>
+    <div class="contact_icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png">
+    </div>
+    <h2>
+        F-505, Aparna Lake Breeze,<br>
+        Chandanagar, Hyderabad-500 050.
+    </h2>
+</li>
+
+</ul>
+</div>
+
+</div>
+
+<!-- RIGHT (UNCHANGED EXACTLY) -->
+<div class="col-lg-7 col-md-6 mt-4">
+
+<form id="contactForm" novalidate>
+
+<div class="row">
+<div class="col-md-6">
+<input type="text" id="fname" class="form-control" placeholder="First Name *">
+<div class="error" id="fnameError"></div>
+</div>
+
+<div class="col-md-6 mt-3 mt-md-0">
+<input type="text" id="lname" class="form-control" placeholder="Last Name *">
+<div class="error" id="lnameError"></div>
+</div>
+</div>
+
+<div class="row mt-4">
+<div class="col-md-6">
+<input type="tel" id="mobile" class="form-control" placeholder="Mobile Number *">
+<div class="error" id="mobileError"></div>
+</div>
+
+<div class="col-md-6 mt-3 mt-md-0">
+<input type="email" id="email" class="form-control" placeholder="Email Address *">
+<div class="error" id="emailError"></div>
+</div>
+</div>
+
+<div class="mt-4">
+<textarea id="message" class="form-control" rows="4" placeholder="Message *"></textarea>
+<div class="error" id="messageError"></div>
+</div>
+
+<div class="text-center mt-4">
+<button type="submit" class="btn btn_g_submit text-white">SUBMIT</button>
+</div>
+
+</form>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SUCCESS MODAL -->
+<div class="modal fade" id="successModal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content text-center p-4">
+<h4 class="mb-3 text-success">Success</h4>
+<p>Your form has been submitted successfully!</p>
+<button class="btn btn-primary mt-3" data-bs-dismiss="modal">OK</button>
+</div>
+</div>
+</div>
+
+<section class="map-section mt-3">
+    <div class="container">
+        <div class="map-wrapper">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15219.901014099602!2d78.3282583!3d17.5086947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb64206ee95566a1!2sPremierAgile!5e0!3m2!1sen!2sin!4v1623395445159!5m2!1sen!2sin"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="PremierAgile Location">
+            </iframe>
+        </div>
+    </div>
+</section>
+<footer class="footer-main ">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-2 col-md-4 col-12">
+                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/logo.png" alt="Footer Image" style="filter: brightness(0) invert(1);" class="img-fluid">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <ul class="footer-links">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Premier Wednesday</li>
+                    <li>Corporate</li>
+                    <li>Resources</li>
+                    <li>Blog</li>
+                    <li>Quizzes</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <ul class="footer-links">
+                    <li>Founder-CEO</li>
+                    <li>Contact Us</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Refund & Cancellation</li>
+                    <li>Rescheduling Policy</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-6">
+                <ul class="footer-social">
+                    <li><i class="fab fa-linkedin"></i> Linkedin</li>
+                    <li><i class="fab fa-facebook"></i> Facebook</li>
+                    <li><i class="fab fa-youtube"></i> Youtube</li>
+                    <li><i class="fab fa-twitter"></i> Twitter</li>
+                    <li><i class="fab fa-instagram"></i> Instagram</li>
+                    <li><i class="fab fa-whatsapp"></i> Whatsapp</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="footer-address">
+                    <p><strong>India Office 1:</strong><br>
+                        Flat no 301, 3rd floor, B Block, Anjanadri Residency, Miyapur, Hyderabad</p>
+
+                    <p><strong>India Office 2:</strong><br>
+                        Marathahalli, Bengaluru-560037</p>
+
+                    <p><strong>USA Office:</strong><br>
+                        Austin, TX-78717</p>
+
+                    <p>Email: info@premieragile.com</p>
+                    <p>Call: 918977024453<br>917702124453<br>919154224453</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <p>© PremierAgile Consulting Private Limited. All Rights Reserved.</p>
+
+            <div>
+                <span class="me-2">As Featured In</span>
+                <img src="https://premieragile.com/public/uploads/assetupload/assetupload01756716198.png" class="img-fluid bottom-logo" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const text = document.getElementById("scrollText");
+const container = document.querySelector(".move");
+
+let pos = window.innerWidth;
+let speed = 1;
+let isPaused = false;
+
+function loop() {
+    if (!isPaused) {
+        pos -= speed;
+
+        if (pos < -text.offsetWidth) {
+            pos = container.offsetWidth;
+        }
+
+        text.style.transform = `translateX(${pos}px)`;
+    }
+
+    requestAnimationFrame(loop);
+}
+
+container.addEventListener("mouseenter", () => isPaused = true);
+container.addEventListener("mouseleave", () => isPaused = false);
+
+window.addEventListener("load", loop);
+window.addEventListener("resize", () => {
+    pos = container.offsetWidth;
+});
+
+/* MOBILE CLEAN */
+document.getElementById("mobile").addEventListener("input", function(){
+    this.value = this.value.replace(/\D/g, "").slice(0,10);
+    document.getElementById("mobileError").innerText = "";
+});
+
+/* FORM VALIDATION */
+document.getElementById("contactForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+let valid = true;
+
+let fname = document.getElementById("fname").value.trim();
+let lname = document.getElementById("lname").value.trim();
+let mobile = document.getElementById("mobile").value.trim();
+let email = document.getElementById("email").value.trim();
+let message = document.getElementById("message").value.trim();
+
+document.querySelectorAll(".error").forEach(el => el.innerText = "");
+
+/* NAME */
+if(fname.length < 3){
+    document.getElementById("fnameError").innerText = "Min 3 characters required";
+    valid = false;
+}
+
+if(lname.length < 1){
+    document.getElementById("lnameError").innerText = "Min 1 character required";
+    valid = false;
+}
+
+/* MOBILE */
+if(mobile.length !== 10){
+    document.getElementById("mobileError").innerText = "Enter 10 digit mobile number";
+    valid = false;
+}
+else if(!/^[1-9]/.test(mobile)){
+    document.getElementById("mobileError").innerText = "Must start with 1-9";
+    valid = false;
+}
+
+/* EMAIL */
+let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if(!emailRegex.test(email)){
+    document.getElementById("emailError").innerText = "Invalid email";
+    valid = false;
+}
+
+/* MESSAGE */
+if(message.length < 10){
+    document.getElementById("messageError").innerText = "Minimum 10 characters required";
+    valid = false;
+}
+else if(message.split(/\s+/).length < 3){
+    document.getElementById("messageError").innerText = "Please enter a meaningful message";
+    valid = false;
+}
+else if(!/[aeiouAEIOU]/.test(message)){
+    document.getElementById("messageError").innerText = "Message seems invalid";
+    valid = false;
+}
+
+/* SUCCESS */
+if(valid){
+    let modal = new bootstrap.Modal(document.getElementById('successModal'));
+    modal.show();
+    document.getElementById("contactForm").reset();
+}
+
+});
+</script>
+
+</body>
+</html>

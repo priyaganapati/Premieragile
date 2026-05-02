@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navbar</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="continuous.css">
+</head>
+
+<body>
+
+<!-- TOP NAVBAR -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <a class="navbar-brand d-lg-none">
+            <img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="mobile-logo">
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none d-lg-none ms-auto" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+            <i class="bi bi-list text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end">
+            <ul class="navbar-nav align-items-center">
+
+                <li class="nav-item">
+                    <a class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">Company</a></li>
+                        <li><a class="dropdown-item">Our Accredition</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Corporate</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">CSM Corporates</a></li>
+                        <li><a class="dropdown-item">CSPO Corporates</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">Blogs</a></li>
+                        <li><a class="dropdown-item">Continuous Learning</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Premier Acceleration</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">About </a></li>
+                        <li><a class="dropdown-item">Resume Services</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Contact</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">Contact Us</a></li>
+                        <li><a class="dropdown-item">Refer & Earn</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link">Book AGILE51</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="offcanvas offcanvas-start d-lg-none" id="mobileMenu">
+    <div class="offcanvas-header">
+        <img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="mobile-logo">
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <div class="accordion" id="menuAccordion">
+
+            <button class="accordion-button collapsed">Home</button>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#aboutMenu">
+                        About
+                    </button>
+                </h2>
+                <div id="aboutMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a>Company</a>
+                        <a>Our Accredition</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#corpMenu">
+                        Corporate
+                    </button>
+                </h2>
+                <div id="corpMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a>CSM Corporates</a>
+                        <a>CSPO Corporates</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#resMenu">
+                        Resources
+                    </button>
+                </h2>
+                <div id="resMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a>Blogs</a>
+                        <a>Continuous Learning</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#premMenu">
+                        Premier Acceleration
+                    </button>
+                </h2>
+                <div id="premMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a>About </a>
+                        <a>Resume Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#contactMenu">
+                        Contact
+                    </button>
+                </h2>
+                <div id="contactMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a>Contact Us</a>
+                        <a>Refer & Earn</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="accordion-button collapsed">Book AGILE51</button>
+
+        </div>
+    </div>
+</div>
+
+<!-- SECOND NAV -->
+<section class="second-nav d-none d-lg-block">
+    <div class="container-fluid second-nav-inner">
+
+        <div class="logo-wrap">
+            <img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="logo-img">
+        </div>
+
+        <div class="center-wrap">
+
+            
+            <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" class="form-control" placeholder="Search Courses">
+            </div>
+
+        </div>
+
+        <div class="right-wrap">
+            <button class="btn quick-btn">Quick Book</button>
+            <button class="btn login-btn">Log in</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- SCROLL TEXT -->
+<section class="third-section text-center text-white">
+    <div class="move">
+        <p id="scrollText">
+            Welcome to PremierAgile! Get Plugged In | Grow with One of the Largest Agile & Scrum Communities | FEATURED IN FORBES MAGAZINE 2025 | Proud to Announce AGILE51 SUCCESS FACTORS | World-class guidance to transform yourself and your organization
+        </p>
+    </div>
+</section>
+
+<section class="banner">
+    <div class="container">
+
+        <!-- TEXT -->
+        <div class="row mb-4">
+            <div class="col-lg-7">
+                <h1>Continuous Learning</h1>
+
+                <p>
+                    Professionals and companies need to upgrade with new knowledge or skills in order to see things in different perspectives. PremierAgile focuses on upskilling our customers and corporates alike to implement new methodologies and technologies. We offer case studies, online courses, LearningShorts, Free Mentoring, Mock Tests, Webinar recordings and many more – curated by our experts for your continuous learning.
+                </p>
+            </div>
+        </div>
+
+        <!-- ICON ROW -->
+        <div class="row banner-footer">
+
+            <div class="col-lg-3 col-md-6 banner_footer">
+                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/753651.svg">
+                <span>20000+ Trained</span>
+            </div>
+
+            <div class="col-lg-3 col-md-6 banner_footer">
+                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/knowledge.svg">
+                <span>35+ Countries</span>
+            </div>
+
+            <div class="col-lg-3 col-md-6 banner_footer">
+                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/success.svg">
+                <span>1000+ Workshops</span>
+            </div>
+
+            <div class="col-lg-3 col-md-6 banner_footer">
+                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/globe.svg">
+                <span>
+                    Rated 5/5
+                    <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/google.png" class="google">
+                    <a href="#" target="_blank">Reviews</a>
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="section_learning">
+<div class="container">
+
+<div class="slider-wrapper">
+
+<button class="slider-btn prev">&#8249;</button>
+<button class="slider-btn next">&#8250;</button>
+
+<div class="slider-track" id="track">
+
+<!-- ✅ ALL YOUR CARDS -->
+
+<div class="learning-card"><div class="card-inner">
+<img src="https://ik.imagekit.io/PremierAgile/public/uploads/freedownloads/file_1628745970.png">
+<h4>Free Mentoring</h4>
+<ul>
+<li>Ask Suresh Konduru is a free
+mentoring program that helps
+you advance in your
+professional career.</li>
+<li>An exploratory platform to
+find answers for questions
+relating to your career or Agile
+implementation.</li>
+</ul>
+</div></div>
+
+<div class="learning-card"><div class="card-inner">
+<img src="https://ik.imagekit.io/PremierAgile/public/uploads/freedownloads/file_1628745990.png">
+<h4>Quizzes</h4>
+<ul>
+<li>Scrum Master</li>
+<li>Product Owner</li>
+<li>Agile Coaching</li>
+<li>Leading SAFe</li>
+</ul>
+</div></div>
+
+<div class="learning-card"><div class="card-inner">
+<img src="https://ik.imagekit.io/PremierAgile/public/uploads/freedownloads/file_1628746006.png">
+<h4>Books</h4>
+<ul>
+<li>Agile-Scrum Guide</li>
+<li>Study Guide for Lean and Six Sigma Tequniques</li>
+</ul>
+</div></div>
+
+<div class="learning-card"><div class="card-inner">
+<img src="https://ik.imagekit.io/PremierAgile/public/uploads/freedownloads/file_1628746023.png">
+<h4>Online Courses</h4>
+<ul>
+<li>Agile Coaching Mindset</li>
+<li>Agile Coaching Tools</li>
+<li>Agile Mindset</li>
+<li>Data Science Essentials </li>
+<li>DevOps</li>
+<li>Overview of Agile</li>
+</ul>
+</div></div>
+
+<div class="learning-card"><div class="card-inner">
+<img src="https://ik.imagekit.io/PremierAgile/public/uploads/freedownloads/file_1628746062.png">
+<h4>Mock Tests</h4>
+<ul>
+<li>PMI-ACP Mock tests</li>
+<li>PSM I Mock tests</li>
+</ul>
+</div></div>
+
+<div class="learning-card"><div class="card-inner">
+<img src="https://ik.imagekit.io/PremierAgile/public/uploads/freedownloads/file_1628747516.png">
+<h4>Metrics</h4>
+<ul>
+<li>Performance tracking</li>
+<li>metrics track progress</li>
+<li>Real-world participation metrics</li>
+<li>Suggested for various roles in Scrum Organisation</li>
+
+</ul>
+</div></div>
+
+</div>
+</div>
+
+</div>
+</section>
+<footer class="footer-main mt-5">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-2 col-md-4 col-12">
+                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/logo.png" alt="Footer Image" style="filter: brightness(0) invert(1);" class="img-fluid">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <ul class="footer-links">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Premier Wednesday</li>
+                    <li>Corporate</li>
+                    <li>Resources</li>
+                    <li>Blog</li>
+                    <li>Quizzes</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <ul class="footer-links">
+                    <li>Founder-CEO</li>
+                    <li>Contact Us</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Refund & Cancellation</li>
+                    <li>Rescheduling Policy</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-6">
+                <ul class="footer-social">
+                    <li><i class="fab fa-linkedin"></i> Linkedin</li>
+                    <li><i class="fab fa-facebook"></i> Facebook</li>
+                    <li><i class="fab fa-youtube"></i> Youtube</li>
+                    <li><i class="fab fa-twitter"></i> Twitter</li>
+                    <li><i class="fab fa-instagram"></i> Instagram</li>
+                    <li><i class="fab fa-whatsapp"></i> Whatsapp</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="footer-address">
+                    <p><strong>India Office 1:</strong><br>
+                        Flat no 301, 3rd floor, B Block, Anjanadri Residency, Miyapur, Hyderabad</p>
+
+                    <p><strong>India Office 2:</strong><br>
+                        Marathahalli, Bengaluru-560037</p>
+
+                    <p><strong>USA Office:</strong><br>
+                        Austin, TX-78717</p>
+
+                    <p>Email: info@premieragile.com</p>
+                    <p>Call: 918977024453<br>917702124453<br>919154224453</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <p>© PremierAgile Consulting Private Limited. All Rights Reserved.</p>
+
+            <div>
+                <span class="me-2">As Featured In</span>
+                <img src="https://premieragile.com/public/uploads/assetupload/assetupload01756716198.png" class="img-fluid bottom-logo" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const text = document.getElementById("scrollText");
+const container = document.querySelector(".move");
+
+let pos = window.innerWidth;
+let speed = 1;
+let isPaused = false;
+
+function loop() {
+    if (!isPaused) {
+        pos -= speed;
+
+        if (pos < -text.offsetWidth) {
+            pos = container.offsetWidth;
+        }
+
+        text.style.transform = `translateX(${pos}px)`;
+    }
+
+    requestAnimationFrame(loop);
+}
+
+container.addEventListener("mouseenter", () => isPaused = true);
+container.addEventListener("mouseleave", () => isPaused = false);
+
+window.addEventListener("load", loop);
+window.addEventListener("resize", () => {
+    pos = container.offsetWidth;
+});
+
+
+const track = document.getElementById('track');
+
+/* NEXT BUTTON */
+document.querySelector('.next').onclick = () => {
+
+    const card = track.children[0];
+    const width = card.offsetWidth;
+
+    track.style.transition = "0.4s";
+    track.style.transform = `translateX(-${width}px)`;
+
+    setTimeout(()=>{
+        track.appendChild(card);
+        track.style.transition = "none";
+        track.style.transform = "translateX(0)";
+    },400);
+}
+
+/* PREV BUTTON */
+document.querySelector('.prev').onclick = () => {
+
+    const cards = track.children;
+    const last = cards[cards.length - 1];
+    const width = last.offsetWidth;
+
+    track.insertBefore(last, cards[0]);
+    track.style.transition = "none";
+    track.style.transform = `translateX(-${width}px)`;
+
+    setTimeout(()=>{
+        track.style.transition = "0.4s";
+        track.style.transform = "translateX(0)";
+    },10);
+}
+
+</script>
+
+</body>
+</html>
