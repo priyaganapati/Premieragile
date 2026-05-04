@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Navbar</title>
+<title>Premier Agile</title>
 
 <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="fevicon.jpg">
 
 <!-- Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -28,49 +29,49 @@
 
 <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end">
 <ul class="navbar-nav align-items-center">
-<li class="nav-item"><a  class="nav-link">Home</a></li>
+<li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
 
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
 <ul class="dropdown-menu">
 <li><a href="company.html" class="dropdown-item">Company</a></li>
-<li><a class="dropdown-item">Our Accreditation Bodies</a></li>
+<li><a href="accredition.html" class="dropdown-item">Our Accreditation Bodies</a></li>
 </ul>
 </li>
 
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Corporate</a>
 <ul class="dropdown-menu">
-<li><a class="dropdown-item">CSM corporate</a></li>
-<li><a class="dropdown-item">CSPO corporate</a></li>
+<li><a href="CSM.html" class="dropdown-item">CSM corporate</a></li>
+<li><a href="CSPO.html" class="dropdown-item">CSPO corporate</a></li>
 </ul>
 </li>
 
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resources</a>
 <ul class="dropdown-menu">
-<li><a class="dropdown-item">Blogs</a></li>
-<li><a class="dropdown-item">Continuous Learning</a></li>
+<li><a href="blogs.html" class="dropdown-item">Blogs</a></li>
+<li><a href="continuous.html" class="dropdown-item">Continuous Learning</a></li>
 </ul>
 </li>
 
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Premier Acceleration</a>
 <ul class="dropdown-menu">
-<li><a class="dropdown-item">About</a></li>
-<li><a class="dropdown-item">Resume Services</a></li>
+<li><a href="about.html" class="dropdown-item">About</a></li>
+<li><a href="resume.html" class="dropdown-item">Resume Services</a></li>
 </ul>
 </li>
 
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Contact</a>
 <ul class="dropdown-menu">
-<li><a class="dropdown-item">Contact Us</a></li>
-<li><a class="dropdown-item">Refer & Earn</a></li>
+<li><a href="contact.html" class="dropdown-item">Contact Us</a></li>
+<li><a href="refer.html" class="dropdown-item">Refer & Earn</a></li>
 </ul>
 </li>
 
-<li class="nav-item"><a class="nav-link">Book AGILE51</a></li>
+<li class="nav-item"><a href="book.html" class="nav-link">Book AGILE51</a></li>
 </ul>
 </div>
 </div>
@@ -78,8 +79,9 @@
 
 <div class="offcanvas offcanvas-start d-lg-none" id="mobileMenu">
 <div class="offcanvas-header">
-<img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="mobile-logo">
-<button class="btn-close" data-bs-dismiss="offcanvas"></button>
+<a href="home.html">
+<img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="logo-img">
+</a><button class="btn-close" data-bs-dismiss="offcanvas"></button>
 </div>
 
 <div class="offcanvas-body">
@@ -92,8 +94,8 @@
 </h2>
 <div id="aboutMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
 <div class="accordion-body">
-<a>Company</a>
-<a>Our Accreditation Bodies</a>
+<a href="company.html">Company</a>
+<a href="accredition.html">Our Accreditation Bodies</a>
 </div>
 </div>
 </div>
@@ -104,8 +106,8 @@
 </h2>
 <div id="corpMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
 <div class="accordion-body">
-<a>CSM corporate</a>
-<a>CSPO corporate</a>
+<a href="CSM.html">CSM corporate</a>
+<a href="CSPO.html">CSPO corporate</a>
 </div>
 </div>
 </div>
@@ -116,8 +118,8 @@
 </h2>
 <div id="resMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
 <div class="accordion-body">
-<a>Blogs</a>
-<a>Continuous Learning</a>
+<a href="blogs.html">Blogs</a>
+<a href="continuous.html">Continuous Learning</a>
 </div>
 </div>
 </div>
@@ -128,8 +130,8 @@
 </h2>
 <div id="premMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
 <div class="accordion-body">
-<a>About</a>
-<a>Resume Services</a>
+<a href="about.html">About</a>
+<a href="resume.html">Resume Services</a>
 </div>
 </div>
 </div>
@@ -142,7 +144,9 @@
 <section class="second-nav d-none d-lg-block">
 <div class="container-fluid second-nav-inner">
 <div>
+<a href="home.html">
 <img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="logo-img">
+</a>
 </div>
 
 <div class="center-wrap">
@@ -221,7 +225,38 @@ Welcome to PremierAgile! Get Plugged In | Grow with One of the Largest Agile & S
 
   </div>
 </section>
+<section class="stats-section">
+  <div class="container">
+    <div class="row text-center">
 
+      <div class="col-6 col-md-2 stat">
+        <h2 class="counter" data-target="25000">0</h2>
+        <p>Trained</p>
+      </div>
+
+      <div class="col-6 col-md-2 stat">
+        <h2 class="counter" data-target="35">0</h2>
+        <p>Countries</p>
+      </div>
+
+      <div class="col-6 col-md-2 stat">
+        <h2 class="counter" data-target="1000">0</h2>
+        <p>Workshops</p>
+      </div>
+
+      <div class="col-6 col-md-2 stat">
+        <h2 class="counter" data-target="100">0</h2>
+        <p>Success Rate</p>
+      </div>
+
+      <div class="col-12 col-md-2 stat">
+        <h2 class="forbes">Forbes</h2>
+        <p>Featured in 2025</p>
+      </div>
+
+    </div>
+  </div>
+</section>
 <div class="container ps-4 pe-4">
 
     <!-- HEADER -->
@@ -386,8 +421,8 @@ leadership skills.</p>
                         We don't offer only training. We travel with you during your learning journeys and provide
                         resources to implement Scrum in real-world situations.
                     </p>
-
-                    <button class="who-btn">View more</button>
+<a href="about.html">                    <button class="who-btn">View more</button>
+</a>
 
                 </div>
             </div>
@@ -501,7 +536,7 @@ We are rated high on Google by our esteemed customers
             <p class="mb-0">Based on nearly 6000</p>
             <p>Genuine reviews</p>
 
-            <button class="review-btn mt-2">Review us on Google</button>
+            <a href="https://www.google.com/search?q=premieragile&rlz=1C1ONGR_enIN992IN992&sxsrf=AJOqlzWzZz-G8-pk4oB6mLz-bxtmwAJfzg%3A1677578108314&ei=fM_9Y8jjEpqO4-EPvMmR-As&oq=pre&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMgQIIxAnMgQIIxAnMgQIIxAnMgUIABCRAjIECAAQQzIECAAQQzIECAAQQzIKCC4QsQMQgwEQQzIECAAQQzIICAAQgAQQsQM6CggAEEcQ1gQQsAM6BwgAELADEEM6CggAELEDEIMBEEM6CwgAEIAEELEDEIMBOgUIABCABEoECEEYAFD-CVjjDWCTJWgBcAF4AIABlAGIAZMDkgEDMC4zmAEAoAEByAEKwAEB&sclient=gws-wiz-serp#lrd="><button class="review-btn mt-2">Review us on Google</button></a>
         </div>
 
     </div>
@@ -957,37 +992,33 @@ window.addEventListener("resize", () => {
 
 
 // ================= COUNTER =================
-const counters = document.querySelectorAll('.timer');
+const nums = document.querySelectorAll(".counter");
 
-const observer = new IntersectionObserver((entries, obs) => {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
 
-    const counter = entry.target;
-    const target = +counter.getAttribute('data-count');
+    const el = e.target;
+    const target = +el.dataset.target;
+    let n = 0;
 
-    let count = 0;
-    const increment = target / 100;
+    const run = () => {
+      n += target / 100;
 
-    function update() {
-      count += increment;
-
-      if (count < target) {
-        counter.innerText = Math.floor(count);
-        requestAnimationFrame(update);
+      if (n < target) {
+        el.innerText = Math.floor(n);
+        requestAnimationFrame(run);
       } else {
-        counter.innerText = target;
+        el.innerText = target + (target === 100 ? "%" : "+");
       }
-    }
+    };
 
-    update();
-    obs.unobserve(counter);
+    run();
+    obs.unobserve(el);
   });
 }, { threshold: 0.5 });
 
-counters.forEach(counter => observer.observe(counter));
-
-
+nums.forEach(el => obs.observe(el));
 // ================= TABS =================
 const tabs = document.querySelectorAll(".tab");
 const line = document.querySelector(".line");
@@ -1026,7 +1057,7 @@ function visible(){
     return 4;
 }
 
-function moveCourseSlider(){   // ✅ renamed
+function moveCourseSlider(){   
     const card = document.querySelector(".card-course");
     if(!card) return;
 
@@ -1039,21 +1070,21 @@ if(next && prev){
         const max = courseTrack.children.length - visible();
         if(courseIndex < max){
             courseIndex++;
-            moveCourseSlider();   // ✅ updated
+            moveCourseSlider();   
         }
     };
 
     prev.onclick = ()=>{
         if(courseIndex > 0){
             courseIndex--;
-            moveCourseSlider();   // ✅ updated
+            moveCourseSlider();   
         }
     };
 }
 
 window.addEventListener("resize", ()=>{
     courseIndex = 0;
-    moveCourseSlider();   // ✅ updated
+    moveCourseSlider();   
 });
 
 
@@ -1095,7 +1126,7 @@ function visibleCards(){
     return 4;
 }
 
-function moveSocialSlider(){   // ✅ renamed
+function moveSocialSlider(){   
     const card = document.querySelector(".card-x");
     const gap = 20;
     const width = card.offsetWidth + gap;
@@ -1108,21 +1139,22 @@ socialNext.onclick = () => {
 
     if(socialIndex < max){
         socialIndex++;
-        moveSocialSlider();   // ✅ updated
+        moveSocialSlider();   
     }
 };
 
 socialPrev.onclick = () => {
     if(socialIndex > 0){
         socialIndex--;
-        moveSocialSlider();   // ✅ updated
+        moveSocialSlider();   
     }
 };
 
 window.addEventListener("resize", ()=>{
     socialIndex = 0;
-    moveSocialSlider();   // ✅ updated
+    moveSocialSlider();   
 });
+
 </script>
 
 </body>

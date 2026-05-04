@@ -394,8 +394,7 @@ body{
     display: inline-block;
 }
 
-/* LINKEDIN ICON ONLY */
-/* OLD (remove this completely) */
+
 .linkedin-btn{
     width: 45px;
     height: 45px;
@@ -472,7 +471,6 @@ body{
 }
 
 
-/* ================= TOP SECTION ================= */
 .section-top{
     background:#f7f7f7;
     padding:40px 0 20px;
@@ -498,7 +496,7 @@ body{
     font-size:14px;
 }
 
-/* ================= STEPS SECTION ================= */
+/* STEPS SECTION  */
 .steps-section{
     position:relative;
     background:url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600') center/cover no-repeat;
@@ -752,12 +750,10 @@ body{
     margin-top:10px;
 }
 
-/* REMOVE ANY SCROLL */
 .testimonial-card{
     overflow:hidden;
 }
 
-/* CTA */
 .faqs_queries {
     background: linear-gradient(90deg, #7b2ff7, #ff6a3d);
     border-radius: 10px;
@@ -765,7 +761,6 @@ body{
     width: 100%;
 }
 
-/* BG */
 .section_category-faq {
     background: url('https://ik.imagekit.io/PremierAgile/public/asset/image/corporate-bg-faq.png') no-repeat center;
     background-size: cover;
@@ -779,7 +774,6 @@ body{
     background: rgba(90,70,150,0.6);
 }
 
-/* 👉 INCREASE WIDTH HERE */
 .section_faqs {
     position: relative;
     z-index: 1;
@@ -979,12 +973,10 @@ body{
         border-bottom:none;
     }
 
-    /* 🔥 UNDERLINE FOR TOP ROW (01 & 02) */
     .step-item:nth-child(-n+2){
         border-bottom:1px solid #ddd;
     }
 
-    /* remove extra right border for 2nd column */
     .step-item:nth-child(2n){
         border-right:none;
     }

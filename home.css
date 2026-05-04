@@ -147,12 +147,12 @@ a{text-decoration:none!important;cursor:pointer}
     .hero-wrapper {
       position: relative;
       width: 100%;
-      min-height: 100vh;   /* 🔥 FIX */
+      min-height: 100vh;   
     height: auto;        
       overflow: hidden;
     }
 
-    /* ACKGROUND IMAGE (HTML IMG FIXED) */
+
    .hero-img {
     position: absolute;
     width: 100%;
@@ -269,7 +269,30 @@ a{text-decoration:none!important;cursor:pointer}
   max-width: 120px;
 }
 
+.stats-section {
+  padding: 40px 0;
+  background: #f5f5f5;
+}
 
+.stat h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.stat p {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .stat h2 {
+    font-size: 24px;
+  }
+  .stat p {
+    font-size: 14px;
+  }
+}
 
 
 
@@ -307,7 +330,7 @@ a{text-decoration:none!important;cursor:pointer}
     white-space:nowrap;
 }
 
-/* 🔥 TAB FIX */
+
 
 
 .line{
@@ -398,7 +421,6 @@ a{text-decoration:none!important;cursor:pointer}
     font-weight:600;
 }
 
-/* ===== ARROWS ===== */
 .arrow{
     position:absolute;
     top:50%;
@@ -419,12 +441,10 @@ a{text-decoration:none!important;cursor:pointer}
 
 /* respo */
 
-/* prevent overflow issues */
 body{
     overflow-x:hidden;
 }
 
-/* keep cards centered cleanly */
 .card-course{
     align-items:center;
     text-align:center;
@@ -433,10 +453,8 @@ body{
 .bottom{
     width:100%;
 }
-/* HOVER EFFECT */
 .card-course:hover .badge{
       background:linear-gradient(180deg,#a144af,#3f2bbf);
-  /* purple (matches theme) */
 }
 /* responsive */
 
@@ -466,7 +484,6 @@ body{
 }
 
 /* BUTTON */
-/* BUTTON FIX (STATIC LOOK) */
 .training-banner .btn{
     background:#fff !important;
     color:#000 !important;
@@ -483,7 +500,6 @@ body{
     transition:none;
 }
 
-/* REMOVE ALL STATES */
 .training-banner .btn:hover,
 .training-banner .btn:focus,
 .training-banner .btn:active{
@@ -507,15 +523,15 @@ body{
     background:url('https://ik.imagekit.io/PremierAgile/public/asset/image/who-we-are.jpg') center/cover no-repeat;
     background-attachment:fixed;
 
-    overflow:visible; /* allow overlay out */
+    overflow:visible; 
 }
 
-/* ===== FLOAT IMAGE ===== */
+/*  FLOAT IMAGE*/
 .who-float{
     position:absolute;
     width:240px;
 
-    bottom:60px;   /* overlap bottom */
+    bottom:60px;   
     left:100%;
 
     transform:translateX(-50%);
@@ -528,7 +544,6 @@ body{
     display:block;
 }
 
-/* ===== CONTENT ===== */
 .who-content{
     padding:20px 40px;
 }
@@ -638,7 +653,6 @@ body{
     font-weight: 600;
 }
 
-/* DESCRIPTION (HIDDEN INITIALLY) */
 .content p {
     font-size: 14px;
     margin-top: 10px;
@@ -656,20 +670,17 @@ body{
 /* CENTER PANEL IMAGE */
 .panel .content img{
     display: block;
-    margin: 0 auto 15px;   /* center horizontally + spacing */
-    max-width: 70px;       /* adjust if needed */
+    margin: 0 auto 15px;   
+    max-width: 70px;       
 }
 
-/* OPTIONAL: center entire content */
 .panel .content{
     text-align: center;
 }
-/* SHOW TEXT ON HOVER */
 .panel:hover .content p {
     display: block;
 }
 
-/* GRADIENT HOVER */
 .panel:hover::before {
     opacity: 0.8;
     background: linear-gradient(
@@ -678,10 +689,6 @@ body{
         rgba(63, 43, 191, 0.9)     
     );
 }
-
-/* ========================= */
-/* 📱 MOBILE ONLY */
-/* ========================= */
 
 .review-section{
     background:#cfd8e3;
@@ -793,11 +800,6 @@ body{
 .review-nav.left{ left:10px; }
 .review-nav.right{ right:10px; }
 
-/* MOBILE */
-
-
-
-/* ===== BASE ===== */
 
 /* ===== SECTION ===== */
 .learning-section {
@@ -890,7 +892,7 @@ h2 {
 .learn-card .icon-circle{
     width: 70px;
     height: 70px;
-    margin: 0 auto 15px;   /* ✅ center horizontally */
+    margin: 0 auto 15px;   
     
     display: flex;
     align-items: center;
@@ -1360,10 +1362,6 @@ img {
     display: block;
 }
 
-/* ========================= */
-/* 📱 MOBILE (≤576px) */
-/* ========================= */
-
 /* ================= MOBILE ================= */
 @media (max-width: 576px) {
 
@@ -1524,7 +1522,7 @@ img {
         display: none;
     }
 
-    /* ===== REVIEW SECTION (🔥 FIXED) ===== */
+    
     .review-row {
         display: flex;
         flex-direction: column;
@@ -1668,7 +1666,7 @@ img {
     }
 
     .card-course{
-        flex: 0 0 calc((100% - 20px) / 2);  /* ✅ exact 2 cards with gap */
+        flex: 0 0 calc((100% - 20px) / 2);  
         max-width: calc((100% - 20px) / 2);
     }
 

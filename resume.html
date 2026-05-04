@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Navbar</title>
+<title>Premier Agile</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -18,7 +18,7 @@
 <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container d-flex align-items-center justify-content-between">
 
-        <a class="navbar-brand d-lg-none">
+        <a class="navbar-brand d-lg-none" href="home.html">
             <img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="mobile-logo">
         </a>
 
@@ -30,51 +30,49 @@
             <ul class="navbar-nav align-items-center">
 
                 <li class="nav-item">
-                    <a class="nav-link">Home</a>
-                </li>
+<a class="nav-link" href="home.html">Home</a>                </li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="company.html">Company</a></li>
+        <li><a class="dropdown-item" href="accredition.html">Our Accreditation Bodies</a></li>
+    </ul>
+</li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item">Company</a></li>
-                        <li><a class="dropdown-item">Our Accreditation Bodies</a></li>
-                    </ul>
-                </li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Corporate</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="CSM.html">CSM corporate</a></li>
+        <li><a class="dropdown-item" href="CSPO.html">CSPO corporate</a></li>
+    </ul>
+</li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Corporate</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item">CSM corporate</a></li>
-                        <li><a class="dropdown-item">CSPO corporate</a></li>
-                    </ul>
-                </li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="blogs.html">Blogs</a></li>
+        <li><a class="dropdown-item" href="continuous.html">Continuous Learning</a></li>
+    </ul>
+</li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resources</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item">Blogs</a></li>
-                        <li><a class="dropdown-item">Continuous Learning</a></li>
-                    </ul>
-                </li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Premier Acceleration</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="about.html">about</a></li>
+        <li><a class="dropdown-item" href="resume.html">resume services</a></li>
+    </ul>
+</li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Premier Acceleration</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item">about resume Services</a></li>
-                        <li><a class="dropdown-item">Mentorship</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Contact</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item">Contact Us</a></li>
-                        <li><a class="dropdown-item">Refer & Earn</a></li>
-                    </ul>
-                </li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+        <li><a class="dropdown-item" href="refer.html">Refer & Earn</a></li>
+    </ul>
+</li>
 
                 <li class="nav-item">
-                    <a class="nav-link">Book AGILE51</a>
+                    <a class="nav-link" href="book.html">Book AGILE51</a>
                 </li>
 
             </ul>
@@ -93,8 +91,7 @@
     <div class="offcanvas-body">
         <div class="accordion" id="menuAccordion">
 
-            <button class="accordion-button collapsed">Home</button>
-
+<a href="home.html" class="accordion-button collapsed">Home</a>
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#aboutMenu">
@@ -103,9 +100,9 @@
                 </h2>
                 <div id="aboutMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
                     <div class="accordion-body">
-                        <a>Company</a>
-                        <a>Our Accreditation Bodies</a>
-                    </div>
+    <a href="company.html" class="d-block mb-2">Company</a>
+    <a href="accredition.html" class="d-block">Our Accreditation Bodies</a>
+</div>
                 </div>
             </div>
 
@@ -117,9 +114,9 @@
                 </h2>
                 <div id="corpMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
                     <div class="accordion-body">
-                        <a>CSM corporate</a>
-                        <a>CSPO corporate</a>
-                    </div>
+    <a href="company.html" class="d-block mb-2">Company</a>
+    <a href="accredition.html" class="d-block">Our Accreditation Bodies</a>
+</div>
                 </div>
             </div>
 
@@ -130,10 +127,10 @@
                     </button>
                 </h2>
                 <div id="resMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
-                    <div class="accordion-body">
-                        <a>Blogs</a>
-                        <a>Continuous Learning</a>
-                    </div>
+<div class="accordion-body">
+    <a href="blogs.html" class="d-block mb-2">Blogs</a>
+    <a href="continuous.html" class="d-block">Continuous Learning</a>
+</div>
                 </div>
             </div>
 
@@ -145,8 +142,8 @@
                 </h2>
                 <div id="premMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
                     <div class="accordion-body">
-                        <a>about </a>
-                        <a>resume Services</a>
+                        <a href="about.html" class="d-block mb-2">about </a>
+                        <a href="resume.html" class="d-block">resume Services</a>
                     </div>
                 </div>
             </div>
@@ -159,14 +156,13 @@
                 </h2>
                 <div id="contactMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
                     <div class="accordion-body">
-                        <a>Contact Us</a>
-                        <a>Refer & Earn</a>
+                        <a href="contact.html" class="d-block mb-2">Contact Us</a>
+                        <a href="refer.html" class="d-block">Refer & Earn</a>
                     </div>
                 </div>
             </div>
 
-            <button class="accordion-button collapsed">Book AGILE51</button>
-
+<a href="book.html" class="accordion-button collapsed">Book AGILE51</a>
         </div>
     </div>
 </div>
@@ -176,7 +172,7 @@
     <div class="container-fluid second-nav-inner">
 
         <div class="logo-wrap">
-            <img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="logo-img">
+          <a href="index.html" ><img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="logo-img"></a>
         </div>
 
         <div class="center-wrap">
@@ -436,122 +432,6 @@ For all the Agile courses we assist you the best way possible to make your resum
 
 </section>
 
-<section class="section_contact py-5">
-<div class="container">
-<div class="row">
-
-<!-- LEFT (UPDATED ONLY THIS) -->
-<div class="col-lg-5 col-md-6">
-
-<h1 class="h-contact">Say Hello!</h1>
-
-<div class="section_contact-p mt-3">
-<p>
-Got a question or feedback? We will be delighted to hear from you.
-You may contact us or fill up the form here.
-</p>
-</div>
-
-<div class="contact_details mt-4">
-<ul>
-<li>
-    <div class="contact_icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png">
-    </div>
-    <h2>918977024453, 917702124453, 919154224453</h2>
-</li>
-
-<li>
-    <div class="contact_icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png">
-    </div>
-    <h2>info@premieragile.com</h2>
-</li>
-
-<li>
-    <div class="contact_icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png">
-    </div>
-    <h2>
-        F-505, Aparna Lake Breeze,<br>
-        Chandanagar, Hyderabad-500 050.
-    </h2>
-</li>
-
-</ul>
-</div>
-
-</div>
-
-<!-- RIGHT (UNCHANGED EXACTLY) -->
-<div class="col-lg-7 col-md-6 mt-4">
-
-<form id="contactForm" novalidate>
-
-<div class="row">
-<div class="col-md-6">
-<input type="text" id="fname" class="form-control" placeholder="First Name *">
-<div class="error" id="fnameError"></div>
-</div>
-
-<div class="col-md-6 mt-3 mt-md-0">
-<input type="text" id="lname" class="form-control" placeholder="Last Name *">
-<div class="error" id="lnameError"></div>
-</div>
-</div>
-
-<div class="row mt-4">
-<div class="col-md-6">
-<input type="tel" id="mobile" class="form-control" placeholder="Mobile Number *">
-<div class="error" id="mobileError"></div>
-</div>
-
-<div class="col-md-6 mt-3 mt-md-0">
-<input type="email" id="email" class="form-control" placeholder="Email Address *">
-<div class="error" id="emailError"></div>
-</div>
-</div>
-
-<div class="mt-4">
-<textarea id="message" class="form-control" rows="4" placeholder="Message *"></textarea>
-<div class="error" id="messageError"></div>
-</div>
-
-<div class="text-center mt-4">
-<button type="submit" class="btn btn_g_submit text-white">SUBMIT</button>
-</div>
-
-</form>
-
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- SUCCESS MODAL -->
-<div class="modal fade" id="successModal" tabindex="-1">
-<div class="modal-dialog modal-dialog-centered">
-<div class="modal-content text-center p-4">
-<h4 class="mb-3 text-success">Success</h4>
-<p>Your form has been submitted successfully!</p>
-<button class="btn btn-primary mt-3" data-bs-dismiss="modal">OK</button>
-</div>
-</div>
-</div>
-
-<section class="map-section mt-3">
-    <div class="container">
-        <div class="map-wrapper">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15219.901014099602!2d78.3282583!3d17.5086947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb64206ee95566a1!2sPremierAgile!5e0!3m2!1sen!2sin!4v1623395445159!5m2!1sen!2sin"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                title="PremierAgile Location">
-            </iframe>
-        </div>
-    </div>
-</section>
 <footer class="footer-main ">
     <div class="container">
         <div class="row gy-4">

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premier Agile</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="refer.css">
+</head>
+
+<body>
+
+<!-- TOP NAVBAR --><nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <a class="navbar-brand d-lg-none">
+            <img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="mobile-logo">
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none d-lg-none ms-auto" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+            <i class="bi bi-list text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end">
+            <ul class="navbar-nav align-items-center">
+
+                <li class="nav-item">
+<a class="nav-link" href="home.html">Home</a>                </li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="company.html">Company</a></li>
+        <li><a class="dropdown-item" href="accredition.html">Our Accreditation Bodies</a></li>
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Corporate</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="CSM.html">CSM corporate</a></li>
+        <li><a class="dropdown-item" href="CSPO.html">CSPO corporate</a></li>
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="blogs.html">Blogs</a></li>
+        <li><a class="dropdown-item" href="continuous.html">Continuous Learning</a></li>
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Premier Acceleration</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="about.html">about</a></li>
+        <li><a class="dropdown-item" href="resume.html">resume services</a></li>
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+        <li><a class="dropdown-item" href="refer.html">Refer & Earn</a></li>
+    </ul>
+</li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="book.html">Book AGILE51</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="offcanvas offcanvas-start d-lg-none" id="mobileMenu">
+    <div class="offcanvas-header">
+        <img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="mobile-logo">
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <div class="accordion" id="menuAccordion">
+
+<a href="home.html" class="accordion-button collapsed">Home</a>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#aboutMenu">
+                        About
+                    </button>
+                </h2>
+                <div id="aboutMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+    <a href="company.html" class="d-block mb-2">Company</a>
+    <a href="accredition.html" class="d-block">Our Accreditation Bodies</a>
+</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#corpMenu">
+                        Corporate
+                    </button>
+                </h2>
+                <div id="corpMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+    <a href="company.html" class="d-block mb-2">Company</a>
+    <a href="accredition.html" class="d-block">Our Accreditation Bodies</a>
+</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#resMenu">
+                        Resources
+                    </button>
+                </h2>
+                <div id="resMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+<div class="accordion-body">
+    <a href="blogs.html" class="d-block mb-2">Blogs</a>
+    <a href="continuous.html" class="d-block">Continuous Learning</a>
+</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#premMenu">
+                        Premier Acceleration
+                    </button>
+                </h2>
+                <div id="premMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a href="about.html" class="d-block mb-2">about </a>
+                        <a href="resume.html" class="d-block">resume Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#contactMenu">
+                        Contact
+                    </button>
+                </h2>
+                <div id="contactMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+                    <div class="accordion-body">
+                        <a href="contact.html" class="d-block mb-2">Contact Us</a>
+                        <a href="refer.html" class="d-block">Refer & Earn</a>
+                    </div>
+                </div>
+            </div>
+
+<a href="book.html" class="accordion-button collapsed">Book AGILE51</a>
+        </div>
+    </div>
+</div>
+
+<!-- SECOND NAV -->
+<section class="second-nav d-none d-lg-block">
+    <div class="container-fluid second-nav-inner">
+
+        <div class="logo-wrap">
+          <a href="home.html" ><img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="logo-img"></a>
+        </div>
+
+        <div class="center-wrap">
+
+
+
+            <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" class="form-control" placeholder="Search Courses">
+            </div>
+
+        </div>
+
+        <div class="right-wrap">
+            <button class="btn quick-btn">Quick Book</button>
+            <button class="btn login-btn">Log in</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- SCROLL TEXT -->
+<section class="third-section text-center text-white">
+    <div class="move">
+        <p id="scrollText">
+            Welcome to PremierAgile! Get Plugged In | Grow with One of the Largest Agile & Scrum Communities | FEATURED IN FORBES MAGAZINE 2025 | Proud to Announce AGILE51 SUCCESS FACTORS | World-class guidance to transform yourself and your organization
+        </p>
+    </div>
+</section>
+
+<section class="section_courses-banner pt-4 pt-sm-5">
+    <div class="container">
+        <div class="row">
+            
+            <!-- LEFT TEXT -->
+            <div class="col-lg-6 pb-4 align-self-center">
+                <h1 class="text-white fs-33 text-bold mb-sm-2">
+                    Refer & Earn Flat ₹500 Amazon Vouchers for Every Friend Who Enrolls*
+                </h1>
+                
+                <div class="landing-ul description_content description-ul text-white pr-xl-5 mr-xl-5">
+                    Help them upskill — and treat yourself too. No limits, more friends More rewards.
+                </div>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="col-lg-6 align-self-end pr-0 pr-sm-3 text-center text-lg-end">
+                <img loading="lazy"
+                     src="https://ik.imagekit.io/PremierAgile/public/asset/image/refer-earn.png"
+                     alt="Refer a Friend"
+                     class="img-fluid">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="secion_refer-earn py-5">
+<div class="container">
+<div class="row">
+
+<!-- LEFT -->
+<div class="col-lg-5 pt-4">
+
+<h2 class="text-bold new-courses-cl mb-4">How it works</h2>
+
+<div class="process_details">
+
+<div class="process_base mb-4">
+<div class="d-flex">
+<div class="steps_bg me-3">
+<img src="https://ik.imagekit.io/PremierAgile/public/asset/image/works-refer.jpg">
+</div>
+<div>
+<h3>Refer your friends</h3>
+<p>It's easy - enter their email address or share your referral links via social media</p>
+</div>
+</div>
+</div>
+
+<div class="process_base mb-4">
+<div class="d-flex">
+<div class="steps_bg me-3">
+<img src="https://ik.imagekit.io/PremierAgile/public/asset/image/works-enroll.jpg">
+</div>
+<div>
+<h3>Your friends enroll</h3>
+<p>Your friends enroll for a course of their choice with an exclusive discount.</p>
+</div>
+</div>
+</div>
+
+<div class="process_base">
+<div class="d-flex">
+<div class="steps_bg me-3">
+<img src="https://ik.imagekit.io/PremierAgile/public/asset/image/works-gift.jpg">
+</div>
+<div>
+<h3>You earn a gift card</h3>
+<p>Seamlessly receive Amazon Vouchers for each friend who enrolls</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- RIGHT FORM -->
+<div class="col-lg-7 mt-4">
+
+<div class="new-courses-bg p-4 p-lg-5">
+
+<h2 class="text-center mb-4">Please fill the below form Details</h2>
+
+<form id="referForm" novalidate>
+
+<h5>Your Details</h5>
+
+<div class="row">
+<div class="col-12 mb-3">
+<input type="text" id="yname" class="form-control" placeholder="Name *">
+<div class="error" id="ynameError"></div>
+</div>
+
+<div class="col-md-6 mb-3">
+<input type="tel" id="yphone" class="form-control" placeholder="Phone *">
+<div class="error" id="yphoneError"></div>
+</div>
+
+<div class="col-md-6 mb-3">
+<input type="email" id="yemail" class="form-control" placeholder="Email *">
+<div class="error" id="yemailError"></div>
+</div>
+</div>
+
+<h5 class="mt-3">Friend Details</h5>
+
+<div class="row">
+<div class="col-md-6 mb-3">
+<input type="text" id="fname" class="form-control" placeholder="Friend Name *">
+<div class="error" id="fnameError"></div>
+</div>
+
+<div class="col-md-6 mb-3">
+<input type="tel" id="fmobile" class="form-control" placeholder="Friend Phone *">
+<div class="error" id="fmobileError"></div>
+</div>
+
+<div class="col-md-6 mb-3">
+<input type="email" id="femail" class="form-control" placeholder="Friend Email *">
+<div class="error" id="femailError"></div>
+</div>
+
+<div class="col-md-6 mb-3">
+<select id="course" class="form-select">
+    <option selected disabled>Select Course *</option>
+    <option>Certified Scrum Master</option>
+    <option>Certified Scrum Product Owner</option>  
+    <option>Advanced Certified Scrum Master</option>
+    <option>Advanced Certified Scrum Product Owner</option>
+    <option>Certified Scrum Professional® Product Owner</option>
+    <option>Certified Agile Scaling Practitioner ™</option>
+    <option>AI Certification course for Scrum Masters</option>
+    <option>AI certification course for Product Owners</option>
+    <option>Certified Agile Leader 1 (CAL 1)</option>
+</select>
+<div class="error" id="courseError"></div>
+</div>
+</div>
+
+<div class="text-center mt-3">
+<button type="submit" class="btn btn_g_submit text-white">SUBMIT</button>
+</div>
+
+</form>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SUCCESS MODAL -->
+<div class="modal fade" id="successModal">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content text-center p-4">
+<h4 class="text-success">Success</h4>
+<p>Form submitted successfully!</p>
+<button class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+</div>
+</div>
+</div>
+
+<section class="secion_refer-benefits new-courses-gradient py-4 py-sm-5">
+    <div class="container py-xl-3 px-xl-4">
+
+        <h2 class="text-bold text-white text-center mb-3 mb-sm-4 mb-xl-5 pb-xl-2">
+            What are the Benefits
+        </h2>
+
+        <div class="row px-xl-5 justify-content-center">
+
+            <!-- CARD 1 -->
+            <div class="col-sm-6 col-lg-4 pb-4 pb-lg-0">
+                <div class="refer-benefits h-100 p-4 text-center">
+
+                    <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/refer-gift.jpg"
+                         class="img-fluid br-50">
+
+                    <h3 class="text-bold fs-5 new-courses-cl mt-4 mb-3">
+                        Rewarding Gift cards
+                    </h3>
+
+                    <p>Get paid for every new friend that registers</p>
+
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-sm-6 col-lg-4 pb-4 pb-lg-0">
+                <div class="refer-benefits h-100 p-4 text-center">
+
+                    <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/refer-everyone.jpg"
+                         class="img-fluid br-50">
+
+                    <h3 class="text-bold fs-5 new-courses-cl mt-4 mb-3">
+                        For Everyone
+                    </h3>
+
+                    <p>
+                        Anyone can participate (This includes people who are already registered
+                        and non-registered with our PA courses)
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-sm-6 col-lg-4 pb-4 pb-lg-0">
+                <div class="refer-benefits h-100 p-4 text-center">
+
+                    <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/refer-benefits.jpg"
+                         class="img-fluid br-50">
+
+                    <h3 class="text-bold fs-5 new-courses-cl mt-4 mb-3">
+                        Your friend also gets the benefit
+                    </h3>
+
+                    <p>
+                        Not only you, your friend also gets the benefit when they use your referrals
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="terms_section">
+
+    <h2>Terms & Conditions</h2>
+
+    <div class="terms_box">
+
+        <ul class="terms_list">
+
+            <li>
+                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/attend-bookmark.png">
+                <span>
+                    You are eligible for a referral bonus only when you refer a new student to PremierAgile, and the student enrolls and completes the workshop or program in full.
+                </span>
+            </li>
+
+            <li>
+                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/attend-bookmark.png">
+                <span>
+                    If the referred candidate drops from the workshop for any reason, you will not be eligible for the referral bonus.
+                </span>
+            </li>
+
+            <li>
+                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/attend-bookmark.png">
+                <span>
+                    Reference details must be dropped in PremierAgile “Refer and Earn” page, before the student contacts us.
+                </span>
+            </li>
+
+            <li>
+                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/attend-bookmark.png">
+                <span>
+                    If you use false names, impersonate other people, or provide false/misleading information you are not eligible for PremierAgile referral.
+                </span>
+            </li>
+
+            <li>
+                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/attend-bookmark.png">
+                <span>
+                    You can choose to receive a flat ₹500 Amazon Voucher, or your friend can get a discount on the course price — the benefit is applicable to only one party per referral.
+                </span>
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<section class="faq_section">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="accordion custom-accordion" id="faqAccordion">
+
+        <!-- ITEM 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    How can I refer my friends/connections?
+                </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    You can refer your friends by filling out the referral form or sharing your referral link.
+                </div>
+            </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    Do I need to be a PremierAgile customer to refer my friends?
+                </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    No, anyone can participate in the referral program.
+                </div>
+            </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    How do I get my gift cards/vouchers?
+                </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Once your referral completes the course, you will receive your voucher.
+                </div>
+            </div>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
+                    Will I get referral credit if a friend already exists in database?
+                </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    No, referrals must be new users not already registered.
+                </div>
+            </div>
+        </div>
+
+        <!-- ITEM 5 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">
+                    Do my friends need to use a unique coupon code?
+                </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Not necessarily, but using referral links helps track your rewards.
+                </div>
+            </div>
+        </div>
+
+        <!-- ITEM 6 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq6">
+                    Is there a Minimum Purchase Requirement?
+                </button>
+            </h2>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Yes, minimum purchase conditions may apply depending on course.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer-main mt-5">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-2 col-md-4 col-12">
+                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/logo.png" alt="Footer Image" style="filter: brightness(0) invert(1);" class="img-fluid">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <ul class="footer-links">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Premier Wednesday</li>
+                    <li>Corporate</li>
+                    <li>Resources</li>
+                    <li>Blog</li>
+                    <li>Quizzes</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <ul class="footer-links">
+                    <li>Founder-CEO</li>
+                    <li>Contact Us</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Refund & Cancellation</li>
+                    <li>Rescheduling Policy</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-6">
+                <ul class="footer-social">
+                    <li><i class="fab fa-linkedin"></i> Linkedin</li>
+                    <li><i class="fab fa-facebook"></i> Facebook</li>
+                    <li><i class="fab fa-youtube"></i> Youtube</li>
+                    <li><i class="fab fa-twitter"></i> Twitter</li>
+                    <li><i class="fab fa-instagram"></i> Instagram</li>
+                    <li><i class="fab fa-whatsapp"></i> Whatsapp</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="footer-address">
+                    <p><strong>India Office 1:</strong><br>
+                        Flat no 301, 3rd floor, B Block, Anjanadri Residency, Miyapur, Hyderabad</p>
+
+                    <p><strong>India Office 2:</strong><br>
+                        Marathahalli, Bengaluru-560037</p>
+
+                    <p><strong>USA Office:</strong><br>
+                        Austin, TX-78717</p>
+
+                    <p>Email: info@premieragile.com</p>
+                    <p>Call: 918977024453<br>917702124453<br>919154224453</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <p>© PremierAgile Consulting Private Limited. All Rights Reserved.</p>
+
+            <div>
+                <span class="me-2">As Featured In</span>
+                <img src="https://premieragile.com/public/uploads/assetupload/assetupload01756716198.png" class="img-fluid bottom-logo" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const text = document.getElementById("scrollText");
+const container = document.querySelector(".move");
+
+let pos = window.innerWidth;
+let speed = 1;
+let isPaused = false;
+
+function loop() {
+    if (!isPaused) {
+        pos -= speed;
+
+        if (pos < -text.offsetWidth) {
+            pos = container.offsetWidth;
+        }
+
+        text.style.transform = `translateX(${pos}px)`;
+    }
+
+    requestAnimationFrame(loop);
+}
+
+container.addEventListener("mouseenter", () => isPaused = true);
+container.addEventListener("mouseleave", () => isPaused = false);
+
+window.addEventListener("load", loop);
+window.addEventListener("resize", () => {
+    pos = container.offsetWidth;
+});
+
+const form = document.getElementById("referForm");
+
+// INPUTS
+const yname = document.getElementById("yname");
+const yphone = document.getElementById("yphone");
+const yemail = document.getElementById("yemail");
+
+const fname = document.getElementById("fname");
+const fmobile = document.getElementById("fmobile");
+const femail = document.getElementById("femail");
+const course = document.getElementById("course");
+
+// REGEX
+const nameRegex = /^[A-Za-z ]+$/;
+const phoneRegex = /^[0-9]{10}$/;
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+// VALIDATION FUNCTION
+function validateField(input, regex, errorId, message) {
+    const error = document.getElementById(errorId);
+
+    if (input.value.trim() === "") {
+        error.innerText = "This field is required";
+        return false;
+    }
+
+    if (!regex.test(input.value.trim())) {
+        error.innerText = message;
+        return false;
+    }
+
+    error.innerText = "";
+    return true;
+}
+
+// REAL-TIME VALIDATION
+yname.addEventListener("input", () => {
+    // REMOVE numbers & special chars
+    yname.value = yname.value.replace(/[^A-Za-z ]/g, '');
+    validateField(yname, nameRegex, "ynameError", "Only letters allowed");
+});
+
+
+yphone.addEventListener("input", () => {
+    yphone.value = yphone.value.replace(/\D/g, '').slice(0,10);
+    validateField(yphone, phoneRegex, "yphoneError", "Enter 10 digit number");
+});
+
+yemail.addEventListener("input", () => {
+    validateField(yemail, emailRegex, "yemailError", "Enter valid email");
+});
+
+fname.addEventListener("input", () => {
+    fname.value = fname.value.replace(/[^A-Za-z ]/g, '');
+    validateField(fname, nameRegex, "fnameError", "Only letters allowed");
+});
+
+fmobile.addEventListener("input", () => {
+    fmobile.value = fmobile.value.replace(/\D/g, '').slice(0,10);
+    validateField(fmobile, phoneRegex, "fmobileError", "Enter 10 digit number");
+});
+
+femail.addEventListener("input", () => {
+    validateField(femail, emailRegex, "femailError", "Enter valid email");
+});
+
+// SUBMIT VALIDATION
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let isValid = true;
+
+    isValid &= validateField(yname, nameRegex, "ynameError", "Only letters allowed");
+    isValid &= validateField(yphone, phoneRegex, "yphoneError", "Enter 10 digit number");
+    isValid &= validateField(yemail, emailRegex, "yemailError", "Enter valid email");
+
+    isValid &= validateField(fname, nameRegex, "fnameError", "Only letters allowed");
+    isValid &= validateField(fmobile, phoneRegex, "fmobileError", "Enter 10 digit number");
+    isValid &= validateField(femail, emailRegex, "femailError", "Enter valid email");
+
+    // COURSE VALIDATION
+    if (course.selectedIndex === 0) {
+        alert("Please select a course");
+        isValid = false;
+    }
+
+    if (isValid) {
+        const modal = new bootstrap.Modal(document.getElementById('successModal'));
+        modal.show();
+        form.reset();
+    }
+});
+
+
+</script>
+
+</body>
+</html>

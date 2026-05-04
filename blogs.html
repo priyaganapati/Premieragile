@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Navbar</title>
+<title>Premier Agile</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -14,8 +14,7 @@
 
 <body>
 
-<!-- TOP NAVBAR -->
-<nav class="navbar navbar-expand-lg custom-navbar">
+<!-- TOP NAVBAR --><nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container d-flex align-items-center justify-content-between">
 
         <a class="navbar-brand d-lg-none">
@@ -30,51 +29,49 @@
             <ul class="navbar-nav align-items-center">
 
                 <li class="nav-item">
-                    <a class="nav-link">Home</a>
-                </li>
+<a class="nav-link" href="home.html">Home</a>                </li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="company.html">Company</a></li>
+        <li><a class="dropdown-item" href="accredition.html">Our Accreditation Bodies</a></li>
+    </ul>
+</li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item">Company</a></li>
-                        <li><a class="dropdown-item">Our Accredition</a></li>
-                    </ul>
-                </li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Corporate</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="CSM.html">CSM corporate</a></li>
+        <li><a class="dropdown-item" href="CSPO.html">CSPO corporate</a></li>
+    </ul>
+</li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Corporate</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item">CSM Corporates</a></li>
-                        <li><a class="dropdown-item">CSPO Corporates</a></li>
-                    </ul>
-                </li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="blogs.html">Blogs</a></li>
+        <li><a class="dropdown-item" href="continuous.html">Continuous Learning</a></li>
+    </ul>
+</li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resources</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item">Blogs</a></li>
-                        <li><a class="dropdown-item">Continuous Learning</a></li>
-                    </ul>
-                </li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Premier Acceleration</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="about.html">about</a></li>
+        <li><a class="dropdown-item" href="resume.html">resume services</a></li>
+    </ul>
+</li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Premier Acceleration</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item">About</a></li>
-                        <li><a class="dropdown-item">Resume Services</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Contact</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item">Contact Us</a></li>
-                        <li><a class="dropdown-item">Refer & Earn</a></li>
-                    </ul>
-                </li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+        <li><a class="dropdown-item" href="refer.html">Refer & Earn</a></li>
+    </ul>
+</li>
 
                 <li class="nav-item">
-                    <a class="nav-link">Book AGILE51</a>
+                    <a class="nav-link" href="book.html">Book AGILE51</a>
                 </li>
 
             </ul>
@@ -93,8 +90,7 @@
     <div class="offcanvas-body">
         <div class="accordion" id="menuAccordion">
 
-            <button class="accordion-button collapsed">Home</button>
-
+<a href="home.html" class="accordion-button collapsed">Home</a>
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#aboutMenu">
@@ -103,9 +99,9 @@
                 </h2>
                 <div id="aboutMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
                     <div class="accordion-body">
-                        <a>Company</a>
-                        <a>Our Accredition</a>
-                    </div>
+    <a href="company.html" class="d-block mb-2">Company</a>
+    <a href="accredition.html" class="d-block">Our Accreditation Bodies</a>
+</div>
                 </div>
             </div>
 
@@ -117,9 +113,9 @@
                 </h2>
                 <div id="corpMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
                     <div class="accordion-body">
-                        <a>CSM Corporates</a>
-                        <a>CSPO Corporates</a>
-                    </div>
+    <a href="company.html" class="d-block mb-2">Company</a>
+    <a href="accredition.html" class="d-block">Our Accreditation Bodies</a>
+</div>
                 </div>
             </div>
 
@@ -130,10 +126,10 @@
                     </button>
                 </h2>
                 <div id="resMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
-                    <div class="accordion-body">
-                        <a>Blogs</a>
-                        <a>Continuous Learning</a>
-                    </div>
+<div class="accordion-body">
+    <a href="blogs.html" class="d-block mb-2">Blogs</a>
+    <a href="continuous.html" class="d-block">Continuous Learning</a>
+</div>
                 </div>
             </div>
 
@@ -145,8 +141,8 @@
                 </h2>
                 <div id="premMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
                     <div class="accordion-body">
-                        <a>About</a>
-                        <a>Resume Services</a>
+                        <a href="about.html" class="d-block mb-2">about </a>
+                        <a href="resume.html" class="d-block">resume Services</a>
                     </div>
                 </div>
             </div>
@@ -159,14 +155,13 @@
                 </h2>
                 <div id="contactMenu" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
                     <div class="accordion-body">
-                        <a>Contact Us</a>
-                        <a>Refer & Earn</a>
+                        <a href="contact.html" class="d-block mb-2">Contact Us</a>
+                        <a href="refer.html" class="d-block">Refer & Earn</a>
                     </div>
                 </div>
             </div>
 
-            <button class="accordion-button collapsed">Book AGILE51</button>
-
+<a href="book.html" class="accordion-button collapsed">Book AGILE51</a>
         </div>
     </div>
 </div>
@@ -176,12 +171,13 @@
     <div class="container-fluid second-nav-inner">
 
         <div class="logo-wrap">
-            <img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="logo-img">
+          <a href="home.html" ><img src="https://ik.imagekit.io/PremierAgile/public/asset1/image/premieragile.png" class="logo-img"></a>
         </div>
 
         <div class="center-wrap">
 
-            
+
+
             <div class="search-box">
                 <i class="bi bi-search"></i>
                 <input type="text" class="form-control" placeholder="Search Courses">

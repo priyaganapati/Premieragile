@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<link rel="stylesheet" href="continuous.css">
+<link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
@@ -192,7 +192,6 @@
 
     </div>
 </section>
-
 <!-- SCROLL TEXT -->
 <section class="third-section text-center text-white">
     <div class="move">
@@ -201,138 +200,121 @@
         </p>
     </div>
 </section>
+<section class="section_contact py-5">
+<div class="container">
+<div class="row">
 
-<section class="banner">
-    <div class="container">
+<!-- LEFT (UPDATED ONLY THIS) -->
+<div class="col-lg-5 col-md-6">
 
-        <!-- TEXT -->
-        <div class="row mb-4">
-            <div class="col-lg-7">
-                <h1>Continuous Learning</h1>
+<h1 class="h-contact">Say Hello!</h1>
 
-                <p>
-                    Professionals and companies need to upgrade with new knowledge or skills in order to see things in different perspectives. PremierAgile focuses on upskilling our customers and corporates alike to implement new methodologies and technologies. We offer case studies, online courses, LearningShorts, Free Mentoring, Mock Tests, Webinar recordings and many more – curated by our experts for your continuous learning.
-                </p>
-            </div>
-        </div>
+<div class="section_contact-p mt-3">
+<p>
+Got a question or feedback? We will be delighted to hear from you.
+You may contact us or fill up the form here.
+</p>
+</div>
 
-        <!-- ICON ROW -->
-        <div class="row banner-footer">
-
-            <div class="col-lg-3 col-md-6 banner_footer">
-                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/753651.svg">
-                <span>20000+ Trained</span>
-            </div>
-
-            <div class="col-lg-3 col-md-6 banner_footer">
-                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/knowledge.svg">
-                <span>35+ Countries</span>
-            </div>
-
-            <div class="col-lg-3 col-md-6 banner_footer">
-                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/success.svg">
-                <span>1000+ Workshops</span>
-            </div>
-
-            <div class="col-lg-3 col-md-6 banner_footer">
-                <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/globe.svg">
-                <span>
-                    Rated 5/5
-                    <img src="https://ik.imagekit.io/PremierAgile/public/asset/image/google.png" class="google">
-                    <a href="#" target="_blank">Reviews</a>
-                </span>
-            </div>
-
-        </div>
-
+<div class="contact_details mt-4">
+<ul>
+<li>
+    <div class="contact_icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png">
     </div>
+    <h2>918977024453, 917702124453, 919154224453</h2>
+</li>
+
+<li>
+    <div class="contact_icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png">
+    </div>
+    <h2>info@premieragile.com</h2>
+</li>
+
+<li>
+    <div class="contact_icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png">
+    </div>
+    <h2>
+        F-505, Aparna Lake Breeze,<br>
+        Chandanagar, Hyderabad-500 050.
+    </h2>
+</li>
+
+</ul>
+</div>
+
+</div>
+
+<!-- RIGHT (UNCHANGED EXACTLY) -->
+<div class="col-lg-7 col-md-6 mt-4">
+
+<form id="contactForm" novalidate>
+
+<div class="row">
+<div class="col-md-6">
+<input type="text" id="fname" class="form-control" placeholder="First Name *">
+<div class="error" id="fnameError"></div>
+</div>
+
+<div class="col-md-6 mt-3 mt-md-0">
+<input type="text" id="lname" class="form-control" placeholder="Last Name *">
+<div class="error" id="lnameError"></div>
+</div>
+</div>
+
+<div class="row mt-4">
+<div class="col-md-6">
+<input type="tel" id="mobile" class="form-control"  placeholder="Mobile Number *" maxlength="10" minlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, ''); validateMobile(this.value)">
+<div class="error" id="mobileError"></div>
+</div>
+
+<div class="col-md-6 mt-3 mt-md-0">
+<input type="email" id="email" class="form-control" placeholder="Email Address *">
+<div class="error" id="emailError"></div>
+</div>
+</div>
+
+<div class="mt-4">
+<textarea id="message" class="form-control" rows="4" placeholder="Message *"></textarea>
+<div class="error" id="messageError"></div>
+</div>
+
+<div class="text-center mt-4">
+<button type="submit" class="btn btn_g_submit text-white">SUBMIT</button>
+</div>
+
+</form>
+
+</div>
+
+</div>
+</div>
 </section>
 
-<section class="section_learning">
-<div class="container">
-
-<div class="slider-wrapper">
-
-<button class="slider-btn prev">&#8249;</button>
-<button class="slider-btn next">&#8250;</button>
-
-<div class="slider-track" id="track">
-
-<!-- ✅ ALL YOUR CARDS -->
-
-<div class="learning-card"><div class="card-inner">
-<img src="https://ik.imagekit.io/PremierAgile/public/uploads/freedownloads/file_1628745970.png">
-<h4>Free Mentoring</h4>
-<ul>
-<li>Ask Suresh Konduru is a free
-mentoring program that helps
-you advance in your
-professional career.</li>
-<li>An exploratory platform to
-find answers for questions
-relating to your career or Agile
-implementation.</li>
-</ul>
-</div></div>
-
-<div class="learning-card"><div class="card-inner">
-<img src="https://ik.imagekit.io/PremierAgile/public/uploads/freedownloads/file_1628745990.png">
-<h4>Quizzes</h4>
-<ul>
-<li>Scrum Master</li>
-<li>Product Owner</li>
-<li>Agile Coaching</li>
-<li>Leading SAFe</li>
-</ul>
-</div></div>
-
-<div class="learning-card"><div class="card-inner">
-<img src="https://ik.imagekit.io/PremierAgile/public/uploads/freedownloads/file_1628746006.png">
-<h4>Books</h4>
-<ul>
-<li>Agile-Scrum Guide</li>
-<li>Study Guide for Lean and Six Sigma Tequniques</li>
-</ul>
-</div></div>
-
-<div class="learning-card"><div class="card-inner">
-<img src="https://ik.imagekit.io/PremierAgile/public/uploads/freedownloads/file_1628746023.png">
-<h4>Online Courses</h4>
-<ul>
-<li>Agile Coaching Mindset</li>
-<li>Agile Coaching Tools</li>
-<li>Agile Mindset</li>
-<li>Data Science Essentials </li>
-<li>DevOps</li>
-<li>Overview of Agile</li>
-</ul>
-</div></div>
-
-<div class="learning-card"><div class="card-inner">
-<img src="https://ik.imagekit.io/PremierAgile/public/uploads/freedownloads/file_1628746062.png">
-<h4>Mock Tests</h4>
-<ul>
-<li>PMI-ACP Mock tests</li>
-<li>PSM I Mock tests</li>
-</ul>
-</div></div>
-
-<div class="learning-card"><div class="card-inner">
-<img src="https://ik.imagekit.io/PremierAgile/public/uploads/freedownloads/file_1628747516.png">
-<h4>Metrics</h4>
-<ul>
-<li>Performance tracking</li>
-<li>metrics track progress</li>
-<li>Real-world participation metrics</li>
-<li>Suggested for various roles in Scrum Organisation</li>
-
-</ul>
-</div></div>
-
+<!-- SUCCESS MODAL -->
+<div class="modal fade" id="successModal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content text-center p-4">
+<h4 class="mb-3 text-success">Success</h4>
+<p>Your form has been submitted successfully!</p>
+<button class="btn btn-primary mt-3" data-bs-dismiss="modal">OK</button>
+</div>
 </div>
 </div>
 
-</div>
+<section class="map-section mt-3">
+    <div class="container">
+        <div class="map-wrapper">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15219.901014099602!2d78.3282583!3d17.5086947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb64206ee95566a1!2sPremierAgile!5e0!3m2!1sen!2sin!4v1623395445159!5m2!1sen!2sin"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="PremierAgile Location">
+            </iframe>
+        </div>
+    </div>
 </section>
 <footer class="footer-main mt-5">
     <div class="container">
@@ -434,42 +416,117 @@ window.addEventListener("load", loop);
 window.addEventListener("resize", () => {
     pos = container.offsetWidth;
 });
+const form = document.getElementById("contactForm");
+
+const fname = document.getElementById("fname");
+const lname = document.getElementById("lname");
+const mobile = document.getElementById("mobile");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
+
+// ERROR ELEMENTS
+const fnameError = document.getElementById("fnameError");
+const lnameError = document.getElementById("lnameError");
+const mobileError = document.getElementById("mobileError");
+const emailError = document.getElementById("emailError");
+const messageError = document.getElementById("messageError");
+
+// REGEX
+const nameRegex = /^[A-Za-z]+$/;
+const mobileRegex = /^[0-9]{10}$/;
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+// ===== REAL-TIME VALIDATION =====
+
+// FIRST NAME
+fname.addEventListener("input", () => {
+    fname.value = fname.value.replace(/[^A-Za-z]/g, ""); // remove non-letters
+
+    if (fname.value === "") {
+        fnameError.innerText = "enter valid name";
+    } else {
+        fnameError.innerText = "";
+    }
+});
+
+// LAST NAME - block numbers instantly
+lname.addEventListener("input", () => {
+    lname.value = lname.value.replace(/[^A-Za-z]/g, ""); 
+
+    if (lname.value === "") {
+        lnameError.innerText = "enter valid name";
+    } else {
+        lnameError.innerText = "";
+    }
+});
 
 
-const track = document.getElementById('track');
-
-/* NEXT BUTTON */
-document.querySelector('.next').onclick = () => {
-
-    const card = track.children[0];
-    const width = card.offsetWidth;
-
-    track.style.transition = "0.4s";
-    track.style.transform = `translateX(-${width}px)`;
-
-    setTimeout(()=>{
-        track.appendChild(card);
-        track.style.transition = "none";
-        track.style.transform = "translateX(0)";
-    },400);
+// MOBILE VALIDATION FUNCTION FOR ONINPUT
+function validateMobile(value) {
+    if (value.length < 10) {
+        mobileError.innerText = "Mobile number must be exactly 10 digits";
+    } else if (value.length > 10) {
+        mobileError.innerText = "Mobile number must be exactly 10 digits";
+    } else {
+        mobileError.innerText = "";
+    }
 }
 
-/* PREV BUTTON */
-document.querySelector('.prev').onclick = () => {
+// EMAIL
+email.addEventListener("input", () => {
+    if (!emailRegex.test(email.value)) {
+        emailError.innerText = "Invalid email format";
+    } else {
+        emailError.innerText = "";
+    }
+});
 
-    const cards = track.children;
-    const last = cards[cards.length - 1];
-    const width = last.offsetWidth;
+// MESSAGE
+message.addEventListener("input", () => {
+    if (message.value.trim() === "") {
+        messageError.innerText = "Message required";
+    } else {
+        messageError.innerText = "";
+    }
+});
 
-    track.insertBefore(last, cards[0]);
-    track.style.transition = "none";
-    track.style.transform = `translateX(-${width}px)`;
+// ===== SUBMIT VALIDATION =====
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
 
-    setTimeout(()=>{
-        track.style.transition = "0.4s";
-        track.style.transform = "translateX(0)";
-    },10);
-}
+    let valid = true;
+
+    if (!nameRegex.test(fname.value)) {
+        fnameError.innerText = "Only letters allowed";
+        valid = false;
+    }
+
+    if (!nameRegex.test(lname.value)) {
+        lnameError.innerText = "Only letters allowed";
+        valid = false;
+    }
+
+    if (!mobileRegex.test(mobile.value)) {
+        mobileError.innerText = "Mobile number must be exactly 10 digits";
+        valid = false;
+    }
+
+    if (!emailRegex.test(email.value)) {
+        emailError.innerText = "Invalid email format";
+        valid = false;
+    }
+
+    if (message.value.trim() === "") {
+        messageError.innerText = "Message required";
+        valid = false;
+    }
+
+    if (valid) {
+        const modal = new bootstrap.Modal(document.getElementById("successModal"));
+        modal.show();
+        form.reset();
+    }
+});
 
 </script>
 

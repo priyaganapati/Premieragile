@@ -214,7 +214,6 @@ a {
     border-radius:4px;
 }
 
-/* SECTION */
 .resume-points{
     background:#f5f5f7;
     padding:70px 0;
@@ -227,7 +226,6 @@ a {
     margin:0;
 }
 
-/* LIST ITEM */
 .resume-list li{
     display:flex;
     align-items:flex-start;
@@ -239,20 +237,17 @@ a {
     color:#2d1e83;
 }
 
-/* BOOKMARK ICON */
 .resume-list li img{
     width:22px;
     margin-top:5px;
 }
 
-/* IMAGE */
 .resume-img img{
     width:100%;
     border-radius:6px;
 }
 
 
-/* SECTION GRADIENT */
 .new-courses-gradient{
     background: linear-gradient(90deg,#8a2be2,#ff5f3a);
 }
@@ -265,22 +260,18 @@ a {
     position:relative;
 }
 
-/* 🔥 HOVER EFFECT (MOVE UP) */
 .refer-benefits:hover{
     transform: translateY(-15px);
 }
 
-/* REMOVE POINTER FEEL */
 .refer-benefits{
     cursor: default;
 }
 
-/* IMAGE */
 .refer-benefits img{
     width:80px;
 }
 
-/* TITLE */
 .new-courses-cl{
     color:#2d1e83;
     font-weight:700;
@@ -321,7 +312,6 @@ a {
     border:none;
 }
 
-/* REMOVE BLUE CLICK EFFECT */
 .accordion-button:focus{
     box-shadow:none !important;
     outline:none;
@@ -332,7 +322,6 @@ a {
     color:#1f1b6d;
 }
 
-/* BODY */
 .accordion-body{
     background:#fff;
     padding:18px 20px;
@@ -340,12 +329,10 @@ a {
     border-top:1px solid #bdbdbd;
 }
 
-/* ARROW BLACK */
 .accordion-button::after{
     filter: brightness(0);
 }
 
-/* WIDTH CONTROL */
 .faq-container{
     max-width:900px;
     margin:auto;
@@ -385,7 +372,7 @@ a {
     margin-top:15px;
 }
 
-/* FORM (UNCHANGED) */
+/* FORM  */
 .form-control{
     border:none;
     border-bottom:1px solid #ccc;
@@ -403,7 +390,7 @@ a {
     font-size:12px;
 }
 
-/* BUTTON */
+/* BUTTON sbt*/
 .btn_g_submit{
     background:linear-gradient(90deg,#4a3db5,#d44bb3);
     border:none;
@@ -423,17 +410,14 @@ a {
 
 .contact_icon img{
     width:22px;
-    filter:invert(1); /* makes icon white */
+    filter:invert(1); 
 }
 
-
-/* REMOVE SIDE SPACE */
 .map-section .container{
     max-width: 100%;
     padding: 0;
 }
 
-/* MAP WRAPPER */
 .map-wrapper{
     width: 100%;
     overflow: hidden;
@@ -613,7 +597,7 @@ a {
     }
     
 }
-/* ===================== */
+
 @media(max-width:992px){
 
     .resume-section{
@@ -648,11 +632,10 @@ a {
     .refer-benefits img{
         width:70px;
     }
-}
 
-/* ===================== */
+}
 /* MOBILE */
-/* ===================== */
+
 @media(max-width:768px){
 
     .resume-section{

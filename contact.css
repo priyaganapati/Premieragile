@@ -1,5 +1,4 @@
 
-
 * {
     box-sizing: border-box;
 }
@@ -20,11 +19,6 @@ a {
     padding: 8px 0;
 }
 
-.custom-navbar .container {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-}
-
 .nav-link {
     color: #fff !important;
     font-weight: 600;
@@ -37,29 +31,20 @@ a {
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
+@media (min-width: 992px) {
+    .nav-item.dropdown:hover .dropdown-menu,
+    .course-dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
 /* LOGO */
 .logo-img,
 .mobile-logo {
     height: 42px;
     max-width: 180px;
     object-fit: contain;
-}
-
-/* MOBILE MENU BUTTON FIX */
-.navbar-toggler {
-    margin-left: auto !important;
-    margin-right: 0 !important;
-    padding: 0;
-    border: none;
-    box-shadow: none !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.navbar-toggler i {
-    font-size: 34px;
-    color: #fff !important;
 }
 
 /* SECOND NAV */
@@ -100,7 +85,7 @@ a {
 
 .search-box {
     position: relative;
-  width: 500px;
+    width: 100%;
     max-width: 420px;
 }
 
@@ -108,7 +93,6 @@ a {
     height: 46px;
     padding-left: 42px;
     border-radius: 8px;
-   
 }
 
 .search-box i {
@@ -198,155 +182,105 @@ a {
     margin: 0;
     white-space: nowrap;
 }
-.req {
+.h-contact{
+    font-size:80px;
+    font-weight:800;
+    background:linear-gradient(90deg,#4a3db5,#d44bb3);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.required {
   color: red;
   font-weight: bold;
+  margin-left: 4px;
 }
-/* HERO */
-.banner {
-    background: linear-gradient(rgba(10,25,47,0.85), rgba(10,25,47,0.85)),
-    url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    padding: 60px 0 120px;
+/* TEXT */
+.section_contact-p p{
+    color:#444;
+    font-size:15px;
 }
 
-.banner-inner {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 50px;
+/* CONTACT DETAILS */
+.contact_details ul{
+    list-style:none;
+    padding:0;
+}
+.contact_details li{
+    display:flex;
+    align-items:flex-start;
+    margin-bottom:25px;
+}
+.contact_details img{
+    width:45px;
+    margin-right:15px;
+}
+.contact_details h2{
+    font-size:18px;
+    font-weight:500;
+    margin-top:15px;
 }
 
-.banner h1 {
-    font-size: 32px;
-    margin-bottom: 15px;
+/* FORM (UNCHANGED) */
+.form-control{
+    border:none;
+    border-bottom:1px solid #ccc;
+    border-radius:0;
+    padding-left:0;
+    box-shadow:none !important;
+}
+.form-control:focus{
+    border-bottom:2px solid #6a3bd1;
 }
 
-.banner p {
-    max-width: 700px;
-    font-size: 15px;
-    line-height: 1.6;
+/* ERROR */
+.error{
+    color:red;
+    font-size:12px;
 }
 
-/* STATS */
-.stats {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 25px;
+/* BUTTON */
+.btn_g_submit{
+    background:linear-gradient(90deg,#4a3db5,#d44bb3);
+    border:none;
+    padding:10px 30px;
+    border-radius:5px;
+}
+.contact_icon{
+    width:50px;
+    height:50px;
+    background:#000;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding-left:15px;
 }
 
-.stat {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 14px;
+.contact_icon img{
+    width:22px;
+    filter:invert(1); /* makes icon white */
 }
 
-.stat img {
-    width: 25px;
+
+/* REMOVE SIDE SPACE */
+.map-section .container{
+    max-width: 100%;
+    padding: 0;
 }
 
-/* CONTENT SECTION */
-.content-section {
-    background: #f5f5f5;
+/* MAP WRAPPER */
+.map-wrapper{
+    width: 100%;
+    overflow: hidden;
 }
 
-.content-box {
-    max-width: 1000px;
-    margin: -80px auto 0;
-    background: #fff;
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 2;
-    border-radius: 6px;
-}
-
-/* LEFT */
-.left {
-    flex: 1 1 60%;
-}
-
-.card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.card img {
-    width: 80px;
-}
-
-.card h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 14px;
-    color: #555;
-}
-
-/* RIGHT FORM */
-.right {
-    flex: 1 1 35%;
-    background: #f0f0f0;
-    padding: 20px;
-}
-
-.right h2 {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    font-size: 14px;
+/* MAP IFRAME */
+.map-wrapper iframe{
+    width: 100%;
+    height: 450px;
+    border: 0;
     display: block;
-    margin-bottom: 5px;
 }
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-}
-
-textarea {
-    height: 70px;
-    resize: none;
-}
-
-button {
-    width: auto;
-    padding: 10px;
-    background: #2d3cb5;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-form button {
-    width: 100%;
-}
-
-.error {
-    color: red;
-    font-size: 12px;
-    display: none;
-}
-
 /* FOOTER */
 .footer-main {
     background: #0b0b0b;
@@ -429,26 +363,13 @@ form button {
 .bottom-logo {
     max-width: 180px;
 }
-
-/* DESKTOP HOVER */
-@media (min-width: 992px) {
-    .nav-item.dropdown:hover .dropdown-menu,
-    .course-dropdown:hover .dropdown-menu {
-        display: block;
-        margin-top: 0;
-    }
-
-    .content-box {
-        margin-top: -60px;
-    }
-}
-
 /* TABLET */
-@media(max-width:991px) {
-    .custom-navbar {
-        padding: 10px 0;
+@media (max-width: 991px) {
+    .second-nav {
+        display: none;
     }
 
+    
     .custom-navbar .container {
         max-width: 100%;
         display: flex !important;
@@ -493,14 +414,9 @@ form button {
 }
 
 /* MOBILE */
-@media(max-width:576px) {
-    .custom-navbar .container {
-        padding-left: 12px !important;
-        padding-right: 12px !important;
-    }
-
+@media (max-width: 576px) {
     .mobile-logo {
-        height: 34px;
+        height: 36px;
         max-width: 150px;
     }
 
@@ -515,7 +431,6 @@ form button {
     .move {
         font-size: 13px;
     }
-
     .footer-links li,
     .footer-social li,
     .footer-address p {
@@ -530,22 +445,5 @@ form button {
 
     .bottom-logo {
         max-width: 140px;
-    }
-}
-
-@media(max-width:768px) {
-    .banner {
-        padding: 40px 20px 100px;
-    }
-}
-
-@media(max-width:600px) {
-    .banner h1 {
-        font-size: 24px;
-    }
-
-    .stats {
-        flex-direction: column;
-        gap: 10px;
     }
 }
